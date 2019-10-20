@@ -12,17 +12,17 @@ struct ContentView: View {
     var body: some View {
         
         TabView {
-            Text("Home")
+            LoginView()
                 .tabItem {
                     Image("home")
                     Text("Home")
                 }.tag(0)
-            Text("Store")
+            StoreView()
                 .tabItem {
                     Image("store")
                     Text("Store")
                 }.tag(1)
-            Text("Childs")
+            ChildsView()
             .tabItem {
                 Image("childs")
                 Text("Childs")
