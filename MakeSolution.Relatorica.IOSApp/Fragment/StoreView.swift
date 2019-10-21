@@ -13,7 +13,7 @@ struct StoreView: View {
          ZStack {
                    Color.blue
                        .edgesIgnoringSafeArea(.all)
-                   Text("About View")
+                   Text("Store View")
                        .font(.largeTitle)
                }
     }

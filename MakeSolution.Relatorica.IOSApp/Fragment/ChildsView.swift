@@ -13,7 +13,7 @@ struct ChildsView: View {
          ZStack {
                    Color.yellow
                        .edgesIgnoringSafeArea(.all)
-                   Text("About View")
+                   Text("Childs View")
                        .font(.largeTitle)
                }
     }

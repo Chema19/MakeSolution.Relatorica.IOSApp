@@ -19,6 +19,8 @@
 		935A1EEE235C23D000C3E041 /* ColorPalette.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935A1EED235C23D000C3E041 /* ColorPalette.xcassets */; };
 		935A1EF0235C288000C3E041 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EEF235C288000C3E041 /* ColorPalette.swift */; };
 		935A1EF2235C2A0700C3E041 /* Tipography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EF1235C2A0700C3E041 /* Tipography.swift */; };
+		93AE95B4235D914D0071C625 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE95B3235D914D0071C625 /* ViewRouter.swift */; };
+		93AE95B6235D96B40071C625 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE95B5235D96B40071C625 /* StartView.swift */; };
 		93D506F4235BB00100EAAC60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D506F3235BB00100EAAC60 /* HomeView.swift */; };
 		93D506F6235BB12900EAAC60 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D506F5235BB12900EAAC60 /* StoreView.swift */; };
 		93D506F8235BB22800EAAC60 /* ChildsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D506F7235BB22800EAAC60 /* ChildsView.swift */; };
@@ -39,6 +41,8 @@
 		935A1EED235C23D000C3E041 /* ColorPalette.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorPalette.xcassets; sourceTree = "<group>"; };
 		935A1EEF235C288000C3E041 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		935A1EF1235C2A0700C3E041 /* Tipography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipography.swift; sourceTree = "<group>"; };
+		93AE95B3235D914D0071C625 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		93AE95B5235D96B40071C625 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		93D506F3235BB00100EAAC60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		93D506F5235BB12900EAAC60 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		93D506F7235BB22800EAAC60 /* ChildsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildsView.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				935A1EEA235C20E900C3E041 /* ButtonComponent.swift */,
+				93AE95B3235D914D0071C625 /* ViewRouter.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				935A1EE4235BBA6A00C3E041 /* LoginView.swift */,
+				93AE95B5235D96B40071C625 /* StartView.swift */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 			files = (
 				8B5EA202235A460900EDB686 /* AppDelegate.swift in Sources */,
 				935A1EE5235BBA6A00C3E041 /* LoginView.swift in Sources */,
+				93AE95B4235D914D0071C625 /* ViewRouter.swift in Sources */,
 				93D506F4235BB00100EAAC60 /* HomeView.swift in Sources */,
 				935A1EF2235C2A0700C3E041 /* Tipography.swift in Sources */,
 				8B5EA204235A460900EDB686 /* SceneDelegate.swift in Sources */,
@@ -233,6 +240,7 @@
 				935A1EE9235C209700C3E041 /* AliasHelper.swift in Sources */,
 				935A1EEB235C20E900C3E041 /* ButtonComponent.swift in Sources */,
 				93D506F8235BB22800EAAC60 /* ChildsView.swift in Sources */,
+				93AE95B6235D96B40071C625 /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
