@@ -21,6 +21,10 @@
 		935A1EF2235C2A0700C3E041 /* Tipography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EF1235C2A0700C3E041 /* Tipography.swift */; };
 		93AE95B4235D914D0071C625 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE95B3235D914D0071C625 /* ViewRouter.swift */; };
 		93AE95B6235D96B40071C625 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE95B5235D96B40071C625 /* StartView.swift */; };
+		93CFC1912360E39800308CA2 /* PurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFC1902360E39800308CA2 /* PurchaseModel.swift */; };
+		93CFC195236106A300308CA2 /* PurchaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFC194236106A300308CA2 /* PurchaseResponse.swift */; };
+		93CFC197236155BA00308CA2 /* ApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFC196236155BA00308CA2 /* ApiNetworking.swift */; };
+		93CFC1A02361684C00308CA2 /* PurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFC19F2361684C00308CA2 /* PurchaseViewModel.swift */; };
 		93D506F4235BB00100EAAC60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D506F3235BB00100EAAC60 /* HomeView.swift */; };
 		93D506F6235BB12900EAAC60 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D506F5235BB12900EAAC60 /* StoreView.swift */; };
 		93D506F8235BB22800EAAC60 /* ChildsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D506F7235BB22800EAAC60 /* ChildsView.swift */; };
@@ -43,6 +47,10 @@
 		935A1EF1235C2A0700C3E041 /* Tipography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipography.swift; sourceTree = "<group>"; };
 		93AE95B3235D914D0071C625 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		93AE95B5235D96B40071C625 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		93CFC1902360E39800308CA2 /* PurchaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseModel.swift; sourceTree = "<group>"; };
+		93CFC194236106A300308CA2 /* PurchaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseResponse.swift; sourceTree = "<group>"; };
+		93CFC196236155BA00308CA2 /* ApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetworking.swift; sourceTree = "<group>"; };
+		93CFC19F2361684C00308CA2 /* PurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewModel.swift; sourceTree = "<group>"; };
 		93D506F3235BB00100EAAC60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		93D506F5235BB12900EAAC60 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		93D506F7235BB22800EAAC60 /* ChildsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildsView.swift; sourceTree = "<group>"; };
@@ -78,6 +86,9 @@
 		8B5EA200235A460900EDB686 /* MakeSolution.Relatorica.IOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				93CFC19823615B8100308CA2 /* ViewModel */,
+				93CFC18F23609C6700308CA2 /* Model */,
+				93CFC18E23609C5F00308CA2 /* Response */,
 				935A1EEC235C235800C3E041 /* Assets */,
 				935A1EE7235C207500C3E041 /* Helper */,
 				935A1EE6235C1F7000C3E041 /* Component */,
@@ -106,6 +117,7 @@
 		8B5EA215235A46F000EDB686 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				93CFC196236155BA00308CA2 /* ApiNetworking.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -145,6 +157,30 @@
 				935A1EF1235C2A0700C3E041 /* Tipography.swift */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		93CFC18E23609C5F00308CA2 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				93CFC194236106A300308CA2 /* PurchaseResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		93CFC18F23609C6700308CA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93CFC1902360E39800308CA2 /* PurchaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93CFC19823615B8100308CA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				93CFC19F2361684C00308CA2 /* PurchaseViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		93D506F9235BB92600EAAC60 /* Activity */ = {
@@ -188,6 +224,7 @@
 				TargetAttributes = {
 					8B5EA1FD235A460900EDB686 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -228,13 +265,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CFC197236155BA00308CA2 /* ApiNetworking.swift in Sources */,
 				8B5EA202235A460900EDB686 /* AppDelegate.swift in Sources */,
 				935A1EE5235BBA6A00C3E041 /* LoginView.swift in Sources */,
 				93AE95B4235D914D0071C625 /* ViewRouter.swift in Sources */,
 				93D506F4235BB00100EAAC60 /* HomeView.swift in Sources */,
 				935A1EF2235C2A0700C3E041 /* Tipography.swift in Sources */,
 				8B5EA204235A460900EDB686 /* SceneDelegate.swift in Sources */,
+				93CFC195236106A300308CA2 /* PurchaseResponse.swift in Sources */,
+				93CFC1912360E39800308CA2 /* PurchaseModel.swift in Sources */,
 				93D506F6235BB12900EAAC60 /* StoreView.swift in Sources */,
+				93CFC1A02361684C00308CA2 /* PurchaseViewModel.swift in Sources */,
 				935A1EF0235C288000C3E041 /* ColorPalette.swift in Sources */,
 				8B5EA206235A460900EDB686 /* ContentView.swift in Sources */,
 				935A1EE9235C209700C3E041 /* AliasHelper.swift in Sources */,
@@ -376,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MakeSolution.Relatorica.IOSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = R3TKK6N2KP;
@@ -387,6 +429,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = makesolution.com.pe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -396,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MakeSolution.Relatorica.IOSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = R3TKK6N2KP;
@@ -407,6 +453,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = makesolution.com.pe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
