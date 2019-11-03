@@ -6,8 +6,8 @@
 //  Copyright © 2019 UPC. All rights reserved.
 //
 
-struct PurchaseResponse: Decodable {
-    var Data: [PurchaseModel]? = nil //ASI SE CREAN LAS LISTAS DE OBJETOS
-    var Error: Bool = false
-    var Message: String? = nil
+struct PurchaseResponse: Codable {
+    var Data: [PurchaseModel] //ASI SE CREAN LAS LISTAS DE OBJETOS
+    var Error: Bool
+    var Message: String
 }

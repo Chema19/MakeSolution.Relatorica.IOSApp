@@ -10,15 +10,18 @@ import SwiftUI
 
 struct StartView: View {
     
-    @EnvironmentObject var viewRouter: ViewRouter
+     @State var showLoginView: Bool = false
     
     var body: some View {
        VStack {
-            if viewRouter.currentPage == "login" {
-                LoginView()
-            } else if viewRouter.currentPage == "main" {
+            if showLoginView {
                 ContentView()
-                    .transition(.scale)
+            } else {
+                LoginView()
+                
+                Button("Login") {
+                    self.showLoginView = true
+                }
             }
         }
     }
