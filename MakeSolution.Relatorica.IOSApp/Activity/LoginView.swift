@@ -13,6 +13,8 @@ struct LoginView: View {
     @State private var password: String = ""
   
     @State var showLoginView: Bool = false
+    @State private var showingAlertEmptyData: Bool = false
+    @State private var showingAlertUserError: Bool = false
     
     @State var loginViewModel: LoginViewModel! = nil
     
@@ -22,14 +24,12 @@ struct LoginView: View {
   
     
     var body: some View {
-      
-      
-        NavigationView {
             VStack {
                 if showLoginView {
                     ContentView().animation(.spring())
                     .transition(.slide)
                 } else {
+                    Text("Relatorica").font(.title).bold().padding(.top,40)
                     Image("login")
                                .clipShape(Rectangle()) .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
                                .shadow(radius: 10).padding(.top,30)
@@ -51,22 +51,41 @@ struct LoginView: View {
                            }.padding(.horizontal,28)
                      
                             Button(action: {
-                                LoginViewModel().postLogin(username: self.username, password: self.password){
-                                    resulto in
-                                    if resulto!.loginResponse.Error == false {
-                                        let preferences = UserDefaults.standard
-                                        preferences.set(resulto!.loginResponse.Data.PersonId, forKey: "PADREID")
-                                        preferences.set("Bearer " + resulto!.loginResponse.Data.Token, forKey: "TOKEN")
-                                        self.showLoginView = true
+                                if self.username != "" && self.password != "" {
+                                    LoginViewModel().postLogin(username: self.username, password: self.password){
+                                        resulto in
+                                        if resulto!.loginResponse.Error == false {
+                                            let preferences = UserDefaults.standard
+                                            preferences.set(resulto!.loginResponse.Data.PersonId, forKey: "PADREID")
+                                            preferences.set("Bearer " + resulto!.loginResponse.Data.Token, forKey: "TOKEN")
+                                            self.showLoginView = true
+                                        }else{
+                                            self.showingAlertUserError = true
+                                        }
                                     }
+                                }else{
+                                    self.showingAlertEmptyData = true
                                 }
                             }) {
                                 Text("Login")
-                            }.padding(.top,20).buttonStyle(self.CapsuleButton.buttonStyle)
+                            }.padding(.top,20).buttonStyle(self.CapsuleButton.buttonStyle).alert(isPresented: $showingAlertEmptyData, content: {
+                                Alert(title: Text("Error"), message: Text("username or password empty Add credentials"), dismissButton: .default(Text("Got it!")))
+                            }).alert(isPresented: $showingAlertUserError, content: {
+                                Alert(title: Text("Error"), message: Text("Credenciales incorrectas"), dismissButton: .default(Text("Got it!")))
+                            })
+                                
+                                    
+                                
+                    
+                            Button(action: {
+                                
+                            }) {
+                                Text("Registrar usuario")
+                            }.padding(.top,20)
                     
                             Spacer()
                 }
-            }.navigationBarTitle("Relatorica")
+            
         }
     }
 }

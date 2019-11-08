@@ -19,10 +19,10 @@ struct StoreView: View {
     var body: some View {
         List(self.historiesList.historiesResponseData, id:\.historiaId)
          { histories in
-             VStack(alignment: .leading){
-                Text(histories.nombre).font(.title)
-                Text(histories.argumento)
-                Text("S/. " + String(histories.precio))
+             VStack(alignment: .center, spacing: 1){
+                URLImage(url: histories.imagen).shadow(radius: 10).frame(height: 200, alignment: .center).overlay(Rectangle().stroke(Color.white, lineWidth: 4)).padding(15)
+                Text("Precio: S/. " + String(histories.precio)).font(.title)
+                Text(histories.nombre)
              }
          }
     }

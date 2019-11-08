@@ -11,13 +11,17 @@ struct HomeView: View {
     @ObservedObject private var purchaseList = PurchaseListViewModel(padreId: UserDefaults.standard.object(forKey:"PADREID") as? Int, token: UserDefaults.standard.object(forKey:"TOKEN") as? String)
     
     var body: some View {
-        List(self.purchaseList.purchasesResponseData, id:\.historiaId)
-        { purchases in
-            VStack(alignment: .leading){
-               
-                Text(purchases.nombre).font(.title)
-                Text(purchases.argumento)
+        NavigationView{
+            List(self.purchaseList.purchasesResponseData, id:\.historiaId)
+            { purchases in
+                NavigationLink(destination: DetailPurchaseView()) {
+                    VStack (alignment: .center, spacing: 1){
+                        URLImage(url: purchases.imagen).shadow(radius: 10).frame(height: 200, alignment: .center).overlay(Rectangle().stroke(Color.white, lineWidth: 4)).padding(15)
+                        Text(purchases.nombre).font(.title).padding(10)
+                    }
+                }
             }
+             .navigationBarTitle(Text("Cuentos comprados"))
         }
     }
 }
