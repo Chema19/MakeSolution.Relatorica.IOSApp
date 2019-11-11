@@ -9,13 +9,16 @@
 import SwiftUI
 
 struct DetailPurchaseView: View {
+    var purchaseResponseVM: PurchaseResponseViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+           Text("Hola")
     }
 }
 
-struct DetailPurchaseView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailPurchaseView()
-    }
-}
+//struct DetailPurchaseView_Previews: PreviewProvider {
+    //static var previews: some View {
+        //DetailPurchaseView()
+    //}
+//}
+
+

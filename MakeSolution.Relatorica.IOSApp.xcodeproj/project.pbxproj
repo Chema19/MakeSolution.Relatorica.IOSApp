@@ -29,6 +29,12 @@
 		933B300F2375A19E005D6252 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B300E2375A19E005D6252 /* URLImage.swift */; };
 		933B30112375A23A005D6252 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B30102375A23A005D6252 /* Constants.swift */; };
 		933B30132375AEF8005D6252 /* DetailPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B30122375AEF8005D6252 /* DetailPurchaseView.swift */; };
+		933B301523792C6A005D6252 /* DetailStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B301423792C69005D6252 /* DetailStoreView.swift */; };
+		933B301723792D06005D6252 /* PurchaseApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B301623792D06005D6252 /* PurchaseApiNetworking.swift */; };
+		933B301923792E5B005D6252 /* LoginApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B301823792E5B005D6252 /* LoginApiNetworking.swift */; };
+		933B301B23792ED8005D6252 /* StoreApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B301A23792ED8005D6252 /* StoreApiNetworking.swift */; };
+		933B301D237931D4005D6252 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B301C237931D4005D6252 /* HistoryViewModel.swift */; };
+		933B301F237931EA005D6252 /* PurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B301E237931EA005D6252 /* PurchaseViewModel.swift */; };
 		935A1EE5235BBA6A00C3E041 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EE4235BBA6A00C3E041 /* LoginView.swift */; };
 		935A1EE9235C209700C3E041 /* AliasHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EE8235C209700C3E041 /* AliasHelper.swift */; };
 		935A1EEB235C20E900C3E041 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EEA235C20E900C3E041 /* ButtonComponent.swift */; };
@@ -71,6 +77,12 @@
 		933B300E2375A19E005D6252 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		933B30102375A23A005D6252 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		933B30122375AEF8005D6252 /* DetailPurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPurchaseView.swift; sourceTree = "<group>"; };
+		933B301423792C69005D6252 /* DetailStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoreView.swift; sourceTree = "<group>"; };
+		933B301623792D06005D6252 /* PurchaseApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseApiNetworking.swift; sourceTree = "<group>"; };
+		933B301823792E5B005D6252 /* LoginApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApiNetworking.swift; sourceTree = "<group>"; };
+		933B301A23792ED8005D6252 /* StoreApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreApiNetworking.swift; sourceTree = "<group>"; };
+		933B301C237931D4005D6252 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		933B301E237931EA005D6252 /* PurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewModel.swift; sourceTree = "<group>"; };
 		935A1EE4235BBA6A00C3E041 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		935A1EE8235C209700C3E041 /* AliasHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasHelper.swift; sourceTree = "<group>"; };
 		935A1EEA235C20E900C3E041 /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
@@ -151,6 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				93CFC196236155BA00308CA2 /* ApiNetworking.swift */,
+				933B301823792E5B005D6252 /* LoginApiNetworking.swift */,
+				933B301623792D06005D6252 /* PurchaseApiNetworking.swift */,
+				933B301A23792ED8005D6252 /* StoreApiNetworking.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -226,6 +241,8 @@
 				93295B27236E172300332D4C /* LoginViewModel.swift */,
 				93295B29236E508700332D4C /* HistoryListViewModel.swift */,
 				93295B2D236E575500332D4C /* ChildListViewModel.swift */,
+				933B301C237931D4005D6252 /* HistoryViewModel.swift */,
+				933B301E237931EA005D6252 /* PurchaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -236,6 +253,7 @@
 				935A1EE4235BBA6A00C3E041 /* LoginView.swift */,
 				93AE95B5235D96B40071C625 /* StartView.swift */,
 				933B30122375AEF8005D6252 /* DetailPurchaseView.swift */,
+				933B301423792C69005D6252 /* DetailStoreView.swift */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -318,28 +336,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				93295B30236E585D00332D4C /* ChildModel.swift in Sources */,
+				933B301F237931EA005D6252 /* PurchaseViewModel.swift in Sources */,
 				93CFC197236155BA00308CA2 /* ApiNetworking.swift in Sources */,
 				93295B22236E13F000332D4C /* LoginModel.swift in Sources */,
 				93295B12236AAE8000332D4C /* NetworkingSwiftUI.xcdatamodeld in Sources */,
 				8B5EA202235A460900EDB686 /* AppDelegate.swift in Sources */,
+				933B301723792D06005D6252 /* PurchaseApiNetworking.swift in Sources */,
 				935A1EE5235BBA6A00C3E041 /* LoginView.swift in Sources */,
 				93AE95B4235D914D0071C625 /* ViewRouter.swift in Sources */,
 				933B30132375AEF8005D6252 /* DetailPurchaseView.swift in Sources */,
 				93D506F4235BB00100EAAC60 /* HomeView.swift in Sources */,
+				933B301923792E5B005D6252 /* LoginApiNetworking.swift in Sources */,
 				935A1EF2235C2A0700C3E041 /* Tipography.swift in Sources */,
 				8B5EA204235A460900EDB686 /* SceneDelegate.swift in Sources */,
+				933B301D237931D4005D6252 /* HistoryViewModel.swift in Sources */,
 				93CFC195236106A300308CA2 /* PurchaseResponse.swift in Sources */,
 				93CFC1912360E39800308CA2 /* PurchaseModel.swift in Sources */,
 				93D506F6235BB12900EAAC60 /* StoreView.swift in Sources */,
 				93CFC1A02361684C00308CA2 /* PurchaseListViewModel.swift in Sources */,
 				93295B2E236E575500332D4C /* ChildListViewModel.swift in Sources */,
 				93295B14236D051300332D4C /* HistoryModel.swift in Sources */,
+				933B301B23792ED8005D6252 /* StoreApiNetworking.swift in Sources */,
 				93295B16236D080900332D4C /* HistoryResponse.swift in Sources */,
 				93295B32236E589600332D4C /* ChildsResponse.swift in Sources */,
 				935A1EF0235C288000C3E041 /* ColorPalette.swift in Sources */,
 				8B5EA206235A460900EDB686 /* ContentView.swift in Sources */,
 				935A1EE9235C209700C3E041 /* AliasHelper.swift in Sources */,
 				93295B2A236E508700332D4C /* HistoryListViewModel.swift in Sources */,
+				933B301523792C6A005D6252 /* DetailStoreView.swift in Sources */,
 				933B30112375A23A005D6252 /* Constants.swift in Sources */,
 				933B300D2373E704005D6252 /* ImageDownloader.swift in Sources */,
 				935A1EEB235C20E900C3E041 /* ButtonComponent.swift in Sources */,

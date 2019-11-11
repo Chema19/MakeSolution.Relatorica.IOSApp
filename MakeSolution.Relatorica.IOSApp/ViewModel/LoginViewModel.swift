@@ -13,7 +13,7 @@ class LoginViewModel{
     @Published var loginResponse: LoginResponseViewModel!
     
     func postLogin(username: String?, password: String?, completion: @escaping(LoginResponseViewModel?)->()){
-        ApiNetworking().postLoginFather(username: username, password: password){
+        LoginApiNetworking().postLoginFather(username: username, password: password){
             loginDataResponse in
             let loginResponse = LoginResponseViewModel.init(loginResponse: loginDataResponse)
             DispatchQueue.main.async{

@@ -17,14 +17,19 @@ struct StoreView: View {
     @ObservedObject private var historiesList = HistoryListViewModel(token: UserDefaults.standard.object(forKey:"TOKEN") as? String)
     
     var body: some View {
+        NavigationView{
         List(self.historiesList.historiesResponseData, id:\.historiaId)
          { histories in
-             VStack(alignment: .center, spacing: 1){
-                URLImage(url: histories.imagen).shadow(radius: 10).frame(height: 200, alignment: .center).overlay(Rectangle().stroke(Color.white, lineWidth: 4)).padding(15)
-                Text("Precio: S/. " + String(histories.precio)).font(.title)
-                Text(histories.nombre)
-             }
+            NavigationLink(destination: DetailStoreView(historiesResponseViewModel: histories)){
+                VStack(alignment: .center, spacing: 1){
+                    URLImage(url: histories.imagen).shadow(radius: 10).frame(height: 200, alignment: .center).overlay(Rectangle().stroke(Color.white, lineWidth: 4)).padding(15)
+                    Text("Precio: S/. " + String(histories.precio)).font(.title)
+                    Text(histories.nombre)
+                }
+            }
          }
+            .navigationBarTitle(Text("Store stories"))
+        }
     }
 }
 

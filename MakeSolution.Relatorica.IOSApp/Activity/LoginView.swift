@@ -1,26 +1,22 @@
-//
-//  LoginView.swift
-//  MakeSolution.Relatorica.IOSApp
-//
-//  Created by Josemaria Inga Villafuerte on 10/19/19.
-//  Copyright © 2019 UPC. All rights reserved.
-//
-
 import SwiftUI
+
+enum ActiveAlert {
+    case first, second
+}
 
 struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
   
     @State var showLoginView: Bool = false
-    @State private var showingAlertEmptyData: Bool = false
-    @State private var showingAlertUserError: Bool = false
+    @State private var showingAlert: Bool = false
+    @State private var activeAlert: ActiveAlert = .first
     
     @State var loginViewModel: LoginViewModel! = nil
     
-    let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
-    let CapsuleButton = TokenButton(capsuleText: "Capsule")
-    let TextButton = TokenButton(buttonText: "Text")
+    var lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
+    var CapsuleButton = TokenButton(capsuleText: "Capsule")
+    var TextButton = TokenButton(buttonText: "Text")
   
     
     var body: some View {
@@ -29,8 +25,8 @@ struct LoginView: View {
                     ContentView().animation(.spring())
                     .transition(.slide)
                 } else {
-                    Text("Relatorica").font(.title).bold().padding(.top,40)
-                    Image("login")
+                    Text("Relatorica").padding(.top,40).font(Font.title.weight(.bold))
+                            Image("login")
                                .clipShape(Rectangle()) .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
                                .shadow(radius: 10).padding(.top,30)
                            
@@ -38,8 +34,9 @@ struct LoginView: View {
                                 Image("user").foregroundColor(.red)
                                     .shadow(radius: 10).frame(width: 32.0, height: 32.0)
                             
-                                TextField("Enter username", text:$username).padding(.all)
-                                            .background(lightGreyColor).cornerRadius(5.0)
+                                 TextField("Enter username", text:$username).padding(.all)
+                                .background(lightGreyColor).cornerRadius(5.0)
+                            
                            }.padding(.horizontal,28).padding(.top,30)
                     
                            HStack {
@@ -47,7 +44,7 @@ struct LoginView: View {
                                     .shadow(radius: 10).frame(width: 32.0, height: 32.0)
                                 
                                 TextField("Enter passsword", text:$password).padding(.all)
-                                           .background(lightGreyColor).cornerRadius(5.0)
+                                .background(lightGreyColor).cornerRadius(5.0)
                            }.padding(.horizontal,28)
                      
                             Button(action: {
@@ -60,22 +57,25 @@ struct LoginView: View {
                                             preferences.set("Bearer " + resulto!.loginResponse.Data.Token, forKey: "TOKEN")
                                             self.showLoginView = true
                                         }else{
-                                            self.showingAlertUserError = true
+                                            self.activeAlert = .second
+                                            self.showingAlert = true
                                         }
                                     }
                                 }else{
-                                    self.showingAlertEmptyData = true
+                                    self.activeAlert = .first
+                                    self.showingAlert = true
                                 }
                             }) {
-                                Text("Login")
-                            }.padding(.top,20).buttonStyle(self.CapsuleButton.buttonStyle).alert(isPresented: $showingAlertEmptyData, content: {
-                                Alert(title: Text("Error"), message: Text("username or password empty Add credentials"), dismissButton: .default(Text("Got it!")))
-                            }).alert(isPresented: $showingAlertUserError, content: {
-                                Alert(title: Text("Error"), message: Text("Credenciales incorrectas"), dismissButton: .default(Text("Got it!")))
-                            })
-                                
-                                    
-                                
+                                Text("Enter")
+                            }
+                            .padding(.top,20).buttonStyle(self.CapsuleButton.buttonStyle).alert(isPresented: $showingAlert){
+                                switch activeAlert {
+                                case .first:
+                                    return Alert(title: Text("Error"), message: Text("username or password empty, Add credentials"), dismissButton: .default(Text("Got it!")))
+                                case .second:
+                                    return Alert(title: Text("Error"), message: Text("Incorrect Account"), dismissButton: .default(Text("Got it!")))
+                                }
+                            }
                     
                             Button(action: {
                                 
@@ -95,3 +95,6 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
+
+
+

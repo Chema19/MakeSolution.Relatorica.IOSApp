@@ -5,10 +5,10 @@ class PurchaseListViewModel:ObservableObject {
     @Published var purchasesResponseData = [PurchaseResponseViewModel]()
     
     init(padreId: Int?, token: String?){
-        ApiNetworking().getPurchasesByFather(idPadre: padreId, token: token) {
+        PurchaseApiNetworking().getPurchasesByFather(idPadre: padreId, token: token) {
             purchasesResponseData in
             for item in purchasesResponseData!.Data{
-                ApiNetworking().getHistoryById(idHistory: item.HistoriaId, token: token) {
+                PurchaseApiNetworking().getHistoryById(idHistory: item.HistoriaId, token: token) {
                     historyResponseData in
                     let history = PurchaseResponseViewModel.init(historyModel: historyResponseData!)
                     self.purchasesResponseData.append(history)

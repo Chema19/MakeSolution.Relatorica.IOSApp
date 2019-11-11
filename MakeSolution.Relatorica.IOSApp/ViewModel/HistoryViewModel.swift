@@ -1,30 +1,27 @@
 //
-//  HistoryListViewModel.swift
+//  HistoriyViewModel.swift
 //  MakeSolution.Relatorica.IOSApp
 //
-//  Created by Josemaria Inga Villafuerte on 11/2/19.
+//  Created by Josemaria Inga Villafuerte on 11/11/19.
 //  Copyright © 2019 UPC. All rights reserved.
 //
 
 import Foundation
 
-
-class HistoryListViewModel:ObservableObject {
+class HistoryViewModel:ObservableObject {
     
-    @Published var historiesResponseData = [HistoriesResponseViewModel]()
+    @Published var historyResponseDataVM: HistoryResponseViewModel!
     
-    init(token: String?){
-        StoreApiNetworking().getHistoriesToBuy(token: token) {
-            historiesResponseData in
-            if let historiesResponseData = historiesResponseData{
-                self.historiesResponseData = historiesResponseData.Data.map(HistoriesResponseViewModel.init)
-            }
+    init(historyId: Int, token: String?){
+        PurchaseApiNetworking().getHistoryById(idHistory: historyId, token: token) {
+            historyResponseData in
+            let history = HistoryResponseViewModel.init(historyModel: historyResponseData!)
+            self.historyResponseDataVM = history
         }
     }
 }
 
-
-struct HistoriesResponseViewModel{
+struct HistoryResponseViewModel{
     
      var historyModel: HistoryModel
        

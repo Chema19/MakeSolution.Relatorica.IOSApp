@@ -14,7 +14,7 @@ class ChildListViewModel:ObservableObject {
     @Published var childsResponseData = [ChildsResponseViewModel]()
     
     init(token: String?){
-        ApiNetworking().getHistoriesToBuy(token: token) {
+        StoreApiNetworking().getHistoriesToBuy(token: token) {
             historiesResponseData in  
             if let historiesResponseData = historiesResponseData{
                 //self.historiesResponseData = historiesResponseData.Data.map(HistoriesResponseViewModel.init)
