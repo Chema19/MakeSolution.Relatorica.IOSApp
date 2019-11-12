@@ -1,22 +1,27 @@
-//
-//  DetailStorieView.swift
-//  MakeSolution.Relatorica.IOSApp
-//
-//  Created by Josemaria Inga Villafuerte on 11/11/19.
-//  Copyright © 2019 UPC. All rights reserved.
-//
-
 import SwiftUI
 
 struct DetailStoreView: View {
-    var historiesResponseViewModel: HistoriesResponseViewModel
+    var CapsuleButton = TokenButton(capsuleText: "Capsule")
+    var historiesResponseVM: HistoriesResponseViewModel
     var body: some View {
-             Text("HOLA MUNDO")
+        VStack(alignment: .leading)
+        {
+            VStack(alignment: .center){
+                Text(historiesResponseVM.nombre).font(Font.title.weight(.bold)).multilineTextAlignment(.center).padding(.horizontal,50)
+                
+                URLImage(url: historiesResponseVM.imagen).shadow(radius: 10).frame(height: 200, alignment: .center).overlay(Rectangle().stroke(Color.white, lineWidth: 4)).padding(30)
+                
+            }
+            Text(historiesResponseVM.argumento).multilineTextAlignment(.center).padding(.horizontal,40)
+            Button(action: { }) {
+                Text("Get by S/." + historiesResponseVM.precio)
+            }.padding(.top,20)
+        }
     }
 }
 
-struct DetailStorieView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailStorieView()
-    }
-}
+//struct DetailStorieView_Previews: PreviewProvider {
+    //static var previews: some View {
+        //DetailStorieView()
+    //}
+//}

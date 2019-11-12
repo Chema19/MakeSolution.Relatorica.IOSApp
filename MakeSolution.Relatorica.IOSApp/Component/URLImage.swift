@@ -19,8 +19,6 @@ struct URLImage: View {
         self.imageDownloader.downloadImage(url: self.url)
     }
     
- 
-    
     var body: some View {
         if let imageData = self.imageDownloader.downloadedData{
             let img = UIImage(data: imageData)

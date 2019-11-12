@@ -18,6 +18,7 @@ struct HomeView: View {
                     VStack (alignment: .center, spacing: 1){
                         URLImage(url: purchases.imagen).shadow(radius: 10).frame(height: 200, alignment: .center).overlay(Rectangle().stroke(Color.white, lineWidth: 4)).padding(15)
                         Text(purchases.nombre).font(.title).padding(10)
+                        //CardView(image: purchases.imagen, heading: purchases.nombre, author: purchases.editorial)
                     }
                 }
             }

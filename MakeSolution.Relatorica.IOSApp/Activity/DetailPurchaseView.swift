@@ -1,17 +1,19 @@
-//
-//  DetailPurchaseView.swift
-//  MakeSolution.Relatorica.IOSApp
-//
-//  Created by Josemaria Inga Villafuerte on 11/8/19.
-//  Copyright © 2019 UPC. All rights reserved.
-//
-
 import SwiftUI
 
 struct DetailPurchaseView: View {
+    
     var purchaseResponseVM: PurchaseResponseViewModel
     var body: some View {
-           Text("Hola")
+        VStack(alignment: .leading) {
+            
+            VStack(alignment: .center){
+                Text(purchaseResponseVM.nombre).font(Font.title.weight(.bold)).multilineTextAlignment(.center).padding(.horizontal,50)
+                
+                URLImage(url: purchaseResponseVM.imagen).shadow(radius: 10).frame(height: 200, alignment: .center).overlay(Rectangle().stroke(Color.white, lineWidth: 4)).padding(30)
+            
+            }
+            Text(purchaseResponseVM.argumento).multilineTextAlignment(.center).padding(.horizontal,40)
+        }
     }
 }
 

@@ -16,7 +16,7 @@ class ChildListViewModel:ObservableObject {
     init(token: String?){
         StoreApiNetworking().getHistoriesToBuy(token: token) {
             historiesResponseData in  
-            if let historiesResponseData = historiesResponseData{
+            if historiesResponseData != nil{
                 //self.historiesResponseData = historiesResponseData.Data.map(HistoriesResponseViewModel.init)
             }
         }

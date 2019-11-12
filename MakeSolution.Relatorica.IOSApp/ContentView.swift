@@ -10,7 +10,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
         TabView {
             HomeView()
                 .tabItem {
@@ -27,7 +26,7 @@ struct ContentView: View {
                 Image("childs")
                 Text("Childs")
             }.tag(2)
-        }
+        }.navigationBarHidden(true)
     }
 }
 
