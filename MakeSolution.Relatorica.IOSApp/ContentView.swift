@@ -13,7 +13,7 @@ struct ContentView: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Image("home")
+                    Image(systemName: "house.fill")
                     Text("Home")
                 }.tag(0)
             StoreView()

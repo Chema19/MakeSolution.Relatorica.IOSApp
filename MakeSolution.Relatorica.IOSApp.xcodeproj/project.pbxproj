@@ -35,7 +35,13 @@
 		933B301B23792ED8005D6252 /* StoreApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B301A23792ED8005D6252 /* StoreApiNetworking.swift */; };
 		933B301D237931D4005D6252 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B301C237931D4005D6252 /* HistoryViewModel.swift */; };
 		933B301F237931EA005D6252 /* PurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B301E237931EA005D6252 /* PurchaseViewModel.swift */; };
-		933B3021237AD691005D6252 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3020237AD690005D6252 /* CardView.swift */; };
+		933B3021237AD691005D6252 /* CardViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3020237AD690005D6252 /* CardViewHome.swift */; };
+		933B3023237BB51B005D6252 /* CardViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3022237BB51B005D6252 /* CardViewStore.swift */; };
+		933B3025237D20FD005D6252 /* ParagraphResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3024237D20FA005D6252 /* ParagraphResponse.swift */; };
+		933B3027237D2140005D6252 /* ParagraphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3026237D2140005D6252 /* ParagraphModel.swift */; };
+		933B3029237D2164005D6252 /* ParagraphApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3028237D2164005D6252 /* ParagraphApiNetworking.swift */; };
+		933B302B237D252D005D6252 /* ParagraphListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B302A237D252D005D6252 /* ParagraphListViewModel.swift */; };
+		933B302E237D8DD2005D6252 /* ParagraphResponseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B302D237D8DD2005D6252 /* ParagraphResponseViewModel.swift */; };
 		935A1EE5235BBA6A00C3E041 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EE4235BBA6A00C3E041 /* LoginView.swift */; };
 		935A1EE9235C209700C3E041 /* AliasHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EE8235C209700C3E041 /* AliasHelper.swift */; };
 		935A1EEB235C20E900C3E041 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EEA235C20E900C3E041 /* ButtonComponent.swift */; };
@@ -84,7 +90,13 @@
 		933B301A23792ED8005D6252 /* StoreApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreApiNetworking.swift; sourceTree = "<group>"; };
 		933B301C237931D4005D6252 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		933B301E237931EA005D6252 /* PurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewModel.swift; sourceTree = "<group>"; };
-		933B3020237AD690005D6252 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		933B3020237AD690005D6252 /* CardViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewHome.swift; sourceTree = "<group>"; };
+		933B3022237BB51B005D6252 /* CardViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewStore.swift; sourceTree = "<group>"; };
+		933B3024237D20FA005D6252 /* ParagraphResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphResponse.swift; sourceTree = "<group>"; };
+		933B3026237D2140005D6252 /* ParagraphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphModel.swift; sourceTree = "<group>"; };
+		933B3028237D2164005D6252 /* ParagraphApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphApiNetworking.swift; sourceTree = "<group>"; };
+		933B302A237D252D005D6252 /* ParagraphListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphListViewModel.swift; sourceTree = "<group>"; };
+		933B302D237D8DD2005D6252 /* ParagraphResponseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphResponseViewModel.swift; sourceTree = "<group>"; };
 		935A1EE4235BBA6A00C3E041 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		935A1EE8235C209700C3E041 /* AliasHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasHelper.swift; sourceTree = "<group>"; };
 		935A1EEA235C20E900C3E041 /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
@@ -132,6 +144,7 @@
 		8B5EA200235A460900EDB686 /* MakeSolution.Relatorica.IOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				933B302C237D8DB2005D6252 /* ResponseViewModel */,
 				93CFC19823615B8100308CA2 /* ViewModel */,
 				93CFC18F23609C6700308CA2 /* Model */,
 				93CFC18E23609C5F00308CA2 /* Response */,
@@ -168,6 +181,7 @@
 				933B301823792E5B005D6252 /* LoginApiNetworking.swift */,
 				933B301623792D06005D6252 /* PurchaseApiNetworking.swift */,
 				933B301A23792ED8005D6252 /* StoreApiNetworking.swift */,
+				933B3028237D2164005D6252 /* ParagraphApiNetworking.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -182,6 +196,14 @@
 			path = Fragment;
 			sourceTree = "<group>";
 		};
+		933B302C237D8DB2005D6252 /* ResponseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				933B302D237D8DD2005D6252 /* ParagraphResponseViewModel.swift */,
+			);
+			path = ResponseViewModel;
+			sourceTree = "<group>";
+		};
 		935A1EE6235C1F7000C3E041 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +212,8 @@
 				933B300C2373E704005D6252 /* ImageDownloader.swift */,
 				933B300E2375A19E005D6252 /* URLImage.swift */,
 				933B30102375A23A005D6252 /* Constants.swift */,
-				933B3020237AD690005D6252 /* CardView.swift */,
+				933B3020237AD690005D6252 /* CardViewHome.swift */,
+				933B3022237BB51B005D6252 /* CardViewStore.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -221,6 +244,7 @@
 				93295B23236E146500332D4C /* LoginResponse.swift */,
 				93295B2B236E510A00332D4C /* HistoriesResponse.swift */,
 				93295B31236E589600332D4C /* ChildsResponse.swift */,
+				933B3024237D20FA005D6252 /* ParagraphResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -233,6 +257,7 @@
 				93295B21236E13F000332D4C /* LoginModel.swift */,
 				93295B25236E166900332D4C /* LoginFatherModel.swift */,
 				93295B2F236E585D00332D4C /* ChildModel.swift */,
+				933B3026237D2140005D6252 /* ParagraphModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,6 +271,7 @@
 				93295B2D236E575500332D4C /* ChildListViewModel.swift */,
 				933B301C237931D4005D6252 /* HistoryViewModel.swift */,
 				933B301E237931EA005D6252 /* PurchaseViewModel.swift */,
+				933B302A237D252D005D6252 /* ParagraphListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -346,13 +372,15 @@
 				8B5EA202235A460900EDB686 /* AppDelegate.swift in Sources */,
 				933B301723792D06005D6252 /* PurchaseApiNetworking.swift in Sources */,
 				935A1EE5235BBA6A00C3E041 /* LoginView.swift in Sources */,
+				933B302E237D8DD2005D6252 /* ParagraphResponseViewModel.swift in Sources */,
 				93AE95B4235D914D0071C625 /* ViewRouter.swift in Sources */,
 				933B30132375AEF8005D6252 /* DetailPurchaseView.swift in Sources */,
 				93D506F4235BB00100EAAC60 /* HomeView.swift in Sources */,
 				933B301923792E5B005D6252 /* LoginApiNetworking.swift in Sources */,
 				935A1EF2235C2A0700C3E041 /* Tipography.swift in Sources */,
 				8B5EA204235A460900EDB686 /* SceneDelegate.swift in Sources */,
-				933B3021237AD691005D6252 /* CardView.swift in Sources */,
+				933B3021237AD691005D6252 /* CardViewHome.swift in Sources */,
+				933B3025237D20FD005D6252 /* ParagraphResponse.swift in Sources */,
 				933B301D237931D4005D6252 /* HistoryViewModel.swift in Sources */,
 				93CFC195236106A300308CA2 /* PurchaseResponse.swift in Sources */,
 				93CFC1912360E39800308CA2 /* PurchaseModel.swift in Sources */,
@@ -368,12 +396,16 @@
 				935A1EE9235C209700C3E041 /* AliasHelper.swift in Sources */,
 				93295B2A236E508700332D4C /* HistoryListViewModel.swift in Sources */,
 				933B301523792C6A005D6252 /* DetailStoreView.swift in Sources */,
+				933B3023237BB51B005D6252 /* CardViewStore.swift in Sources */,
+				933B302B237D252D005D6252 /* ParagraphListViewModel.swift in Sources */,
 				933B30112375A23A005D6252 /* Constants.swift in Sources */,
 				933B300D2373E704005D6252 /* ImageDownloader.swift in Sources */,
+				933B3029237D2164005D6252 /* ParagraphApiNetworking.swift in Sources */,
 				935A1EEB235C20E900C3E041 /* ButtonComponent.swift in Sources */,
 				93295B26236E166900332D4C /* LoginFatherModel.swift in Sources */,
 				93295B28236E172300332D4C /* LoginViewModel.swift in Sources */,
 				93D506F8235BB22800EAAC60 /* ChildsView.swift in Sources */,
+				933B3027237D2140005D6252 /* ParagraphModel.swift in Sources */,
 				93295B2C236E510A00332D4C /* HistoriesResponse.swift in Sources */,
 				93295B24236E146500332D4C /* LoginResponse.swift in Sources */,
 				93AE95B6235D96B40071C625 /* StartView.swift in Sources */,

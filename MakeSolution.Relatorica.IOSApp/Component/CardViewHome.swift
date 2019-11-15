@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardViewHome: View {
     
     var image: String
     var heading: String
@@ -31,16 +31,20 @@ struct CardView: View {
                        .font(.caption)
                        .foregroundColor(.secondary)
                }
-               .layoutPriority(100)
+               .layoutPriority(140)
         
                Spacer()
             }.padding()
         }
+        .cornerRadius(10)
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.black, lineWidth: 4)).padding([.top, .horizontal])
     }
 }
 
-struct CardView_Previews: PreviewProvider {
+struct CardViewHome_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(image: "", heading: "", author: "")
+        CardViewHome(image: "", heading: "", author: "")
     }
 }

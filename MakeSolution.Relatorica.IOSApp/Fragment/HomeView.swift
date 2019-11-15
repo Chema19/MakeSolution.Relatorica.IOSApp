@@ -12,13 +12,14 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView{
-            List(self.purchaseList.purchasesResponseData, id:\.historiaId)
+            List(self.purchaseList.purchasesResponseData, id: \.historiaId)
             { purchases in
-                NavigationLink(destination: DetailPurchaseView(purchaseResponseVM: purchases)) {
+                NavigationLink(destination: DetailPurchaseView(purchaseResponseVM: purchases, paragraphList: nil)) {
+                    
                     VStack (alignment: .center, spacing: 1){
-                        URLImage(url: purchases.imagen).shadow(radius: 10).frame(height: 200, alignment: .center).overlay(Rectangle().stroke(Color.white, lineWidth: 4)).padding(15)
-                        Text(purchases.nombre).font(.title).padding(10)
-                        //CardView(image: purchases.imagen, heading: purchases.nombre, author: purchases.editorial)
+                        //URLImage(url: purchases.imagen).shadow(radius: 10).frame(height: 200, alignment: .center).overlay(Rectangle().stroke(Color.white, lineWidth: 4)).padding(15)
+                        //Text(purchases.nombre).font(.title).padding(10)
+                        CardViewHome(image: purchases.imagen, heading: purchases.nombre, author: purchases.editorial)
                     }
                 }
             }
