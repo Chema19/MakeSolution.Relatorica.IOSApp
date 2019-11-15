@@ -124,9 +124,9 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "getHistoryById(idHistory:token:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -140,9 +140,9 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "getHistoryById(idHistory:token:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -204,9 +204,9 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "getHistoryById(idHistory:token:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -220,9 +220,9 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "getHistoryById(idHistory:token:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -236,58 +236,10 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "urlHistory(historyId:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C842587E-A602-424E-8B95-E79DB834F3F2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "getPurchasesByFather(idPadre:token:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C842587E-A602-424E-8B95-E79DB834F3F2 - e81705f84ac2950b"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MakeSolution_Relatorica_IOSApp.ApiNetworking.getPurchasesByFather(idPadre: Swift.Optional&lt;Swift.Int&gt;, token: Swift.Optional&lt;Swift.String&gt;, completion: (Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.PurchaseResponse&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "MakeSolution.Relatorica.IOSApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "1428">
-               </Location>
-               <Location
-                  uuid = "C842587E-A602-424E-8B95-E79DB834F3F2 - d06b17ddb27319d8"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MakeSolution_Relatorica_IOSApp.ApiNetworking.getPurchasesByFather(idPadre: Swift.Optional&lt;Swift.Int&gt;, token: Swift.Optional&lt;Swift.String&gt;, completion: (Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.PurchaseResponse&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "MakeSolution.Relatorica.IOSApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "284">
-               </Location>
-            </Locations>
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ApiNetworking"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -300,9 +252,9 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "getHistoryById(idHistory:token:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -348,9 +300,9 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "getHistoryById(idHistory:token:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -421,70 +373,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6C7DF310-3FF9-4FD5-9890-972226A00EBC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "getPurchasesByFather(idPadre:token:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F2FF541A-0CD3-4C4A-9D8F-A65B8D1307B5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "getPurchasesByFather(idPadre:token:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F2FF541A-0CD3-4C4A-9D8F-A65B8D1307B5 - d06b17ddb27319d8"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MakeSolution_Relatorica_IOSApp.ApiNetworking.getPurchasesByFather(idPadre: Swift.Optional&lt;Swift.Int&gt;, token: Swift.Optional&lt;Swift.String&gt;, completion: (Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.PurchaseResponse&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "MakeSolution.Relatorica.IOSApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "624">
-               </Location>
-               <Location
-                  uuid = "F2FF541A-0CD3-4C4A-9D8F-A65B8D1307B5 - 3f145182251633ee"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MakeSolution_Relatorica_IOSApp.ApiNetworking.getPurchasesByFather(idPadre: Swift.Optional&lt;Swift.Int&gt;, token: Swift.Optional&lt;Swift.String&gt;, completion: (Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.PurchaseResponse&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "MakeSolution.Relatorica.IOSApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "152">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "3638E569-E057-4987-8948-D90EFDB0C3E2"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -508,9 +396,9 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "getHistoryById(idHistory:token:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -524,9 +412,9 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "getHistoryById(idHistory:token:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -572,58 +460,10 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "postLoginFather(username:password:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C0A41496-BA7F-4FAD-BE64-4B7FE0BE90E4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MakeSolution.Relatorica.IOSApp/Activity/LoginView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "C0A41496-BA7F-4FAD-BE64-4B7FE0BE90E4 - 191fa7ec9f34db26"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 () -&gt; () in closure #1 () -&gt; SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.alert(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, content: () -&gt; SwiftUI.Alert) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt; in MakeSolution_Relatorica_IOSApp.LoginView.body.getter : some"
-                  moduleName = "MakeSolution.Relatorica.IOSApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/LoginView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "568">
-               </Location>
-               <Location
-                  uuid = "C0A41496-BA7F-4FAD-BE64-4B7FE0BE90E4 - c77b1afea74e277c"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.LoginResponseViewModel&gt;) -&gt; () in closure #3 () -&gt; () in closure #1 () -&gt; SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.transition(SwiftUI.AnyTransition) -&gt; some&gt;&gt;.0, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.alert(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, content: () -&gt; SwiftUI.Alert) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt; in MakeSolution_Relatorica_IOSApp.LoginView.body.getter : some"
-                  moduleName = "MakeSolution.Relatorica.IOSApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/LoginView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "104">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -636,9 +476,9 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "postLoginFather(username:password:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -716,9 +556,9 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "postLoginFather(username:password:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -732,41 +572,9 @@
             filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "postLoginFather(username:password:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DFD66EF0-B603-43B3-BA3A-9EBEE6CDF6DE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "getPurchasesByFather(idPadre:token:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1E51C890-994E-4A58-A269-D1257B5259B2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "postLoginFather(username:password:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -913,22 +721,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6627143E-D594-481E-A59D-7C50D3B83776"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MakeSolution.Relatorica.IOSApp/Activity/LoginView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "897DF461-4D39-4E34-803E-9874EF289BF9"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1009,16 +801,764 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D4EA9B92-1FD5-423F-BA0F-FF141C7466DB"
+            uuid = "4B97278D-2634-4182-8956-C329F5211BFA"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MakeSolution.Relatorica.IOSApp/Activity/LoginView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65177CAF-376F-47C0-A7F0-BC3C686E180D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "65177CAF-376F-47C0-A7F0-BC3C686E180D - c1b50a006d90294"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MakeSolution_Relatorica_IOSApp.ApiNetworking.postLoginFather(username: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;, completion: (Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.LoginResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "1048">
+               </Location>
+               <Location
+                  uuid = "65177CAF-376F-47C0-A7F0-BC3C686E180D - 59f62153e8bb8b90"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MakeSolution_Relatorica_IOSApp.ApiNetworking.postLoginFather(username: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;, completion: (Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.LoginResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5049E8F0-23E6-44DF-A158-4E3DFC125790"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07895091-DF39-407F-937C-DB03E9BFFE78"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "07895091-DF39-407F-937C-DB03E9BFFE78 - 834217f1a23602d1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MakeSolution_Relatorica_IOSApp.ApiNetworking.postLoginFather(username: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;, completion: (Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.LoginResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "2136">
+               </Location>
+               <Location
+                  uuid = "07895091-DF39-407F-937C-DB03E9BFFE78 - c1b50a006d90294"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MakeSolution_Relatorica_IOSApp.ApiNetworking.postLoginFather(username: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;, completion: (Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.LoginResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC50653F-8E72-438F-AFA9-EC5115DBED54"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Network/ApiNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "urlSonidoById(sonidoId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91FB182F-DADA-4E88-AD9C-12E87C494ED4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/ViewModel/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "postLogin(username:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83689999-617F-4501-8E56-A772C26EC42D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Activity/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "154E0B0E-2647-4B58-A52B-481268D9A731"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Activity/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "436D6B82-B033-4B04-90E5-C6EBC3BC76A3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Activity/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76FA1ABE-EEE7-42D2-AEE0-A1E3A54B0DC4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Activity/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "LoginView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "76FA1ABE-EEE7-42D2-AEE0-A1E3A54B0DC4 - c902fd21b4ca7f6e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 4 of MakeSolution_Relatorica_IOSApp.LoginView.init(showLoginView: Swift.Bool, loginViewModel: Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.LoginViewModel&gt;, lightGreyColor: SwiftUI.Color, CapsuleButton: MakeSolution_Relatorica_IOSApp.TokenButton, TextButton: MakeSolution_Relatorica_IOSApp.TokenButton) -&gt; MakeSolution_Relatorica_IOSApp.LoginView"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "76FA1ABE-EEE7-42D2-AEE0-A1E3A54B0DC4 - cd0e44eac5f7256"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MakeSolution_Relatorica_IOSApp.LoginView.init() -&gt; MakeSolution_Relatorica_IOSApp.LoginView"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "968">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "654F874F-359A-4F15-8BF1-501CAFF54DE2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAD53A75-367E-45BB-894E-C61CFF7304E5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/ViewModel/ParagraphListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "init(token:historyId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DAD53A75-367E-45BB-894E-C61CFF7304E5 - 3082b610b9bb5281"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MakeSolution_Relatorica_IOSApp.ParagraphListViewModel.init(token: Swift.Optional&lt;Swift.String&gt;, historyId: Swift.Int) -&gt; MakeSolution_Relatorica_IOSApp.ParagraphListViewModel"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/ViewModel/ParagraphListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "308">
+               </Location>
+               <Location
+                  uuid = "DAD53A75-367E-45BB-894E-C61CFF7304E5 - fa783d7aa4ccb54f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.ParagraphResponse&gt;) -&gt; () in MakeSolution_Relatorica_IOSApp.ParagraphListViewModel.init(token: Swift.Optional&lt;Swift.String&gt;, historyId: Swift.Int) -&gt; MakeSolution_Relatorica_IOSApp.ParagraphListViewModel"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/ViewModel/ParagraphListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4A20123-5A7C-4674-9C50-D6239DCD072F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Network/ParagraphApiNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getParagraphByHistory(token:historyId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41A8B593-A597-482D-8C2D-A37F52B70E45"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Network/ParagraphApiNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getParagraphByHistory(token:historyId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B93A195-0D3E-487C-8B58-63953E47C31D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/ViewModel/ParagraphListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "init(token:historyId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9B93A195-0D3E-487C-8B58-63953E47C31D - 901dee309c2f4523"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MakeSolution_Relatorica_IOSApp.ParagraphListViewModel.__allocating_init(token: Swift.Optional&lt;Swift.String&gt;, historyId: Swift.Int) -&gt; MakeSolution_Relatorica_IOSApp.ParagraphListViewModel"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/ViewModel/ParagraphListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "9B93A195-0D3E-487C-8B58-63953E47C31D - 3082b610b9bb5281"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MakeSolution_Relatorica_IOSApp.ParagraphListViewModel.init(token: Swift.Optional&lt;Swift.String&gt;, historyId: Swift.Int) -&gt; MakeSolution_Relatorica_IOSApp.ParagraphListViewModel"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/ViewModel/ParagraphListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "372A00C1-FAAD-42A3-8CF9-F2C1E1BB2DFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Network/ParagraphApiNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getParagraphByHistory(token:historyId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CB4E1A0-B24B-4B05-9E45-B7AF0F6CB8A4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Fragment/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "6CB4E1A0-B24B-4B05-9E45-B7AF0F6CB8A4 - c75d52946a76c8f8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MakeSolution_Relatorica_IOSApp.PurchaseResponseViewModel) -&gt; SwiftUI.NavigationLink&lt;SwiftUI.VStack&lt;MakeSolution_Relatorica_IOSApp.CardViewHome&gt;, MakeSolution_Relatorica_IOSApp.DetailPurchaseView&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(SwiftUI.Text) -&gt; some&gt;&gt;.0 in MakeSolution_Relatorica_IOSApp.HomeView.body.getter : some"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Fragment/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "6CB4E1A0-B24B-4B05-9E45-B7AF0F6CB8A4 - f5b4d17296538c9a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.VStack&lt;MakeSolution_Relatorica_IOSApp.CardViewHome&gt; in closure #1 (MakeSolution_Relatorica_IOSApp.PurchaseResponseViewModel) -&gt; SwiftUI.NavigationLink&lt;SwiftUI.VStack&lt;MakeSolution_Relatorica_IOSApp.CardViewHome&gt;, MakeSolution_Relatorica_IOSApp.DetailPurchaseView&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(SwiftUI.Text) -&gt; some&gt;&gt;.0 in MakeSolution_Relatorica_IOSApp.HomeView.body.getter : some"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Fragment/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E27944FF-5584-482A-BEA9-3D5AF66B044D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Network/ParagraphApiNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getParagraphByHistory(token:historyId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A548943-476C-49EA-8917-633ECAA449C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Fragment/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AC92586-388F-40DB-802F-58EF8374722D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Fragment/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "HomeView"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8100485D-59C9-44CC-9AF3-D58EC1C17443"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Fragment/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "HomeView"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF3EFEF0-227F-4273-9CCD-52DEFAE7A4F4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Network/ParagraphApiNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getParagraphByHistory(token:historyId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC7C890A-18AA-4B16-88FD-F5A8E077D752"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Network/ParagraphApiNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getParagraphByHistory(token:historyId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C2BBE11-A855-4DE7-8E87-3CEC62ABE4DD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Network/ParagraphApiNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getParagraphByHistory(token:historyId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DE15D10-7EF9-4656-8692-8E53DA2BBBD4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "previews"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BABDF44-5CA2-4D1D-81C9-4E19508B2E70"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "8BABDF44-5CA2-4D1D-81C9-4E19508B2E70 - 9d9f98be69cf5bc1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MakeSolution_Relatorica_IOSApp.DetailPurchaseView.paragraphList.getter : Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.ParagraphListViewModel&gt;"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "8BABDF44-5CA2-4D1D-81C9-4E19508B2E70 - 85a4f7a684e1d3f5"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MakeSolution_Relatorica_IOSApp.DetailPurchaseView.paragraphList.setter : Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.ParagraphListViewModel&gt;"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "8BABDF44-5CA2-4D1D-81C9-4E19508B2E70 - 1649b3746aeae9c4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MakeSolution_Relatorica_IOSApp.DetailPurchaseView.paragraphList.modify : Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.ParagraphListViewModel&gt;"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "8BABDF44-5CA2-4D1D-81C9-4E19508B2E70 - b3c2b0e2499c4800"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MakeSolution_Relatorica_IOSApp.DetailPurchaseView.paragraphList.modify : Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.ParagraphListViewModel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "8BABDF44-5CA2-4D1D-81C9-4E19508B2E70 - e6c58bca3ee323c1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MakeSolution_Relatorica_IOSApp.DetailPurchaseView.$paragraphList.getter : SwiftUI.Binding&lt;Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.ParagraphListViewModel&gt;&gt;"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "8BABDF44-5CA2-4D1D-81C9-4E19508B2E70 - bb39d6545955ff30"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MakeSolution_Relatorica_IOSApp.DetailPurchaseView.init(purchaseResponseVM: MakeSolution_Relatorica_IOSApp.PurchaseResponseViewModel, paragraphList: Swift.Optional&lt;MakeSolution_Relatorica_IOSApp.ParagraphListViewModel&gt;) -&gt; MakeSolution_Relatorica_IOSApp.DetailPurchaseView"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1415C7A-068C-4846-96DD-2E7BE33702FC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "E1415C7A-068C-4846-96DD-2E7BE33702FC - 4541167634b36b91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onDisappear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in MakeSolution_Relatorica_IOSApp.DetailPurchaseView.body.getter : some"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "572">
+               </Location>
+               <Location
+                  uuid = "E1415C7A-068C-4846-96DD-2E7BE33702FC - 35f93168435fe669"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.edgesIgnoringSafeArea(SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0&gt;, SwiftUI.VStack&lt;SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.Text&gt;&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onDisappear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in MakeSolution_Relatorica_IOSApp.DetailPurchaseView.body.getter : some"
+                  moduleName = "MakeSolution.Relatorica.IOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemariaingavillafuerte/Desktop/IOSCODE/MakeSolution.Relatorica.IOSApp/MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "744">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6FD8BC2E-85F8-412A-A544-517FDB353AC7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MakeSolution.Relatorica.IOSApp/Activity/DetailPurchaseView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "previews"
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
