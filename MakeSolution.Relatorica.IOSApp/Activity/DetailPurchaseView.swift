@@ -2,8 +2,11 @@ import SwiftUI
 
 struct DetailPurchaseView: View {
     
-    var purchaseResponseVM: PurchaseResponseViewModel
-    @State var paragraphList = ParagraphListViewModel(token: UserDefaults.standard.object(forKey:"TOKEN") as? String, historyId: .purchaseResponseVM.historiaId)
+    var purchaseResponseVM: PurchaseResponseViewModel 
+    //@State var paragraphListTest = ParagraphListViewModel(token: UserDefaults.standard.object(forKey:"TOKEN") as? String, historyId: purchaseResponseVM.historiaId)
+    var paragraphList: ParagraphListViewModel! = nil
+    
+    
     
     var body: some View {
         VStack {
@@ -15,8 +18,7 @@ struct DetailPurchaseView: View {
                 VStack(alignment: .leading) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            Text("HOLA")
-                            ForEach(self.paragraphList!.parrafosResponseData){ parrafo in
+                            ForEach(self.paragraphList.parrafosResponseData){ parrafo in
                                 VStack(alignment: .leading) {
                                     Text(parrafo.texto)
                                         .foregroundColor(.primary)
@@ -26,9 +28,6 @@ struct DetailPurchaseView: View {
                         }
                     }
                 }
-            }.onAppear(){
-                  print("DetailView appeared!")
-                self.paragraphList?.getListParagraph(token: UserDefaults.standard.object(forKey:"TOKEN") as? String, historyId: self.purchaseResponseVM.historiaId)
             }
         }
     }

@@ -42,6 +42,14 @@
 		933B3029237D2164005D6252 /* ParagraphApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3028237D2164005D6252 /* ParagraphApiNetworking.swift */; };
 		933B302B237D252D005D6252 /* ParagraphListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B302A237D252D005D6252 /* ParagraphListViewModel.swift */; };
 		933B302E237D8DD2005D6252 /* ParagraphResponseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B302D237D8DD2005D6252 /* ParagraphResponseViewModel.swift */; };
+		933B3030237EC37F005D6252 /* AddChildModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B302F237EC37F005D6252 /* AddChildModel.swift */; };
+		933B3032237EC41C005D6252 /* AddChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3031237EC41C005D6252 /* AddChildView.swift */; };
+		933B3034237EC4B0005D6252 /* AddChildResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3033237EC4B0005D6252 /* AddChildResponse.swift */; };
+		933B3036237EC513005D6252 /* AddChildViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3035237EC513005D6252 /* AddChildViewModel.swift */; };
+		933B3038237EE4C2005D6252 /* AddFatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3037237EE4BF005D6252 /* AddFatherModel.swift */; };
+		933B303A237EE921005D6252 /* AddFatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B3039237EE921005D6252 /* AddFatherResponse.swift */; };
+		933B303C237EE9AA005D6252 /* AddFatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B303B237EE9AA005D6252 /* AddFatherView.swift */; };
+		933B3040237EEB61005D6252 /* AddFatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B303F237EEB61005D6252 /* AddFatherViewModel.swift */; };
 		935A1EE5235BBA6A00C3E041 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EE4235BBA6A00C3E041 /* LoginView.swift */; };
 		935A1EE9235C209700C3E041 /* AliasHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EE8235C209700C3E041 /* AliasHelper.swift */; };
 		935A1EEB235C20E900C3E041 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EEA235C20E900C3E041 /* ButtonComponent.swift */; };
@@ -97,6 +105,14 @@
 		933B3028237D2164005D6252 /* ParagraphApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphApiNetworking.swift; sourceTree = "<group>"; };
 		933B302A237D252D005D6252 /* ParagraphListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphListViewModel.swift; sourceTree = "<group>"; };
 		933B302D237D8DD2005D6252 /* ParagraphResponseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphResponseViewModel.swift; sourceTree = "<group>"; };
+		933B302F237EC37F005D6252 /* AddChildModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildModel.swift; sourceTree = "<group>"; };
+		933B3031237EC41C005D6252 /* AddChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildView.swift; sourceTree = "<group>"; };
+		933B3033237EC4B0005D6252 /* AddChildResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildResponse.swift; sourceTree = "<group>"; };
+		933B3035237EC513005D6252 /* AddChildViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildViewModel.swift; sourceTree = "<group>"; };
+		933B3037237EE4BF005D6252 /* AddFatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFatherModel.swift; sourceTree = "<group>"; };
+		933B3039237EE921005D6252 /* AddFatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFatherResponse.swift; sourceTree = "<group>"; };
+		933B303B237EE9AA005D6252 /* AddFatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFatherView.swift; sourceTree = "<group>"; };
+		933B303F237EEB61005D6252 /* AddFatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFatherViewModel.swift; sourceTree = "<group>"; };
 		935A1EE4235BBA6A00C3E041 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		935A1EE8235C209700C3E041 /* AliasHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasHelper.swift; sourceTree = "<group>"; };
 		935A1EEA235C20E900C3E041 /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
@@ -245,6 +261,8 @@
 				93295B2B236E510A00332D4C /* HistoriesResponse.swift */,
 				93295B31236E589600332D4C /* ChildsResponse.swift */,
 				933B3024237D20FA005D6252 /* ParagraphResponse.swift */,
+				933B3033237EC4B0005D6252 /* AddChildResponse.swift */,
+				933B3039237EE921005D6252 /* AddFatherResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -258,6 +276,8 @@
 				93295B25236E166900332D4C /* LoginFatherModel.swift */,
 				93295B2F236E585D00332D4C /* ChildModel.swift */,
 				933B3026237D2140005D6252 /* ParagraphModel.swift */,
+				933B302F237EC37F005D6252 /* AddChildModel.swift */,
+				933B3037237EE4BF005D6252 /* AddFatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +292,8 @@
 				933B301C237931D4005D6252 /* HistoryViewModel.swift */,
 				933B301E237931EA005D6252 /* PurchaseViewModel.swift */,
 				933B302A237D252D005D6252 /* ParagraphListViewModel.swift */,
+				933B3035237EC513005D6252 /* AddChildViewModel.swift */,
+				933B303F237EEB61005D6252 /* AddFatherViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -279,10 +301,12 @@
 		93D506F9235BB92600EAAC60 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				933B303B237EE9AA005D6252 /* AddFatherView.swift */,
 				935A1EE4235BBA6A00C3E041 /* LoginView.swift */,
 				93AE95B5235D96B40071C625 /* StartView.swift */,
 				933B30122375AEF8005D6252 /* DetailPurchaseView.swift */,
 				933B301423792C69005D6252 /* DetailStoreView.swift */,
+				933B3031237EC41C005D6252 /* AddChildView.swift */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -372,19 +396,24 @@
 				8B5EA202235A460900EDB686 /* AppDelegate.swift in Sources */,
 				933B301723792D06005D6252 /* PurchaseApiNetworking.swift in Sources */,
 				935A1EE5235BBA6A00C3E041 /* LoginView.swift in Sources */,
+				933B303A237EE921005D6252 /* AddFatherResponse.swift in Sources */,
 				933B302E237D8DD2005D6252 /* ParagraphResponseViewModel.swift in Sources */,
+				933B3036237EC513005D6252 /* AddChildViewModel.swift in Sources */,
 				93AE95B4235D914D0071C625 /* ViewRouter.swift in Sources */,
 				933B30132375AEF8005D6252 /* DetailPurchaseView.swift in Sources */,
 				93D506F4235BB00100EAAC60 /* HomeView.swift in Sources */,
 				933B301923792E5B005D6252 /* LoginApiNetworking.swift in Sources */,
 				935A1EF2235C2A0700C3E041 /* Tipography.swift in Sources */,
+				933B3040237EEB61005D6252 /* AddFatherViewModel.swift in Sources */,
 				8B5EA204235A460900EDB686 /* SceneDelegate.swift in Sources */,
 				933B3021237AD691005D6252 /* CardViewHome.swift in Sources */,
 				933B3025237D20FD005D6252 /* ParagraphResponse.swift in Sources */,
 				933B301D237931D4005D6252 /* HistoryViewModel.swift in Sources */,
+				933B3034237EC4B0005D6252 /* AddChildResponse.swift in Sources */,
 				93CFC195236106A300308CA2 /* PurchaseResponse.swift in Sources */,
 				93CFC1912360E39800308CA2 /* PurchaseModel.swift in Sources */,
 				93D506F6235BB12900EAAC60 /* StoreView.swift in Sources */,
+				933B3038237EE4C2005D6252 /* AddFatherModel.swift in Sources */,
 				93CFC1A02361684C00308CA2 /* PurchaseListViewModel.swift in Sources */,
 				93295B2E236E575500332D4C /* ChildListViewModel.swift in Sources */,
 				93295B14236D051300332D4C /* HistoryModel.swift in Sources */,
@@ -392,14 +421,17 @@
 				93295B16236D080900332D4C /* HistoryResponse.swift in Sources */,
 				93295B32236E589600332D4C /* ChildsResponse.swift in Sources */,
 				935A1EF0235C288000C3E041 /* ColorPalette.swift in Sources */,
+				933B303C237EE9AA005D6252 /* AddFatherView.swift in Sources */,
 				8B5EA206235A460900EDB686 /* ContentView.swift in Sources */,
 				935A1EE9235C209700C3E041 /* AliasHelper.swift in Sources */,
 				93295B2A236E508700332D4C /* HistoryListViewModel.swift in Sources */,
 				933B301523792C6A005D6252 /* DetailStoreView.swift in Sources */,
 				933B3023237BB51B005D6252 /* CardViewStore.swift in Sources */,
+				933B3030237EC37F005D6252 /* AddChildModel.swift in Sources */,
 				933B302B237D252D005D6252 /* ParagraphListViewModel.swift in Sources */,
 				933B30112375A23A005D6252 /* Constants.swift in Sources */,
 				933B300D2373E704005D6252 /* ImageDownloader.swift in Sources */,
+				933B3032237EC41C005D6252 /* AddChildView.swift in Sources */,
 				933B3029237D2164005D6252 /* ParagraphApiNetworking.swift in Sources */,
 				935A1EEB235C20E900C3E041 /* ButtonComponent.swift in Sources */,
 				93295B26236E166900332D4C /* LoginFatherModel.swift in Sources */,

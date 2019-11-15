@@ -20,6 +20,16 @@ class ParagraphListViewModel: ObservableObject, Identifiable{
             }
         }
     }
+    
+    func getDataTest(token: String?,historyId: Int) {
+        ParagraphApiNetworking().getParagraphByHistory(token: token, historyId: historyId) {
+            parrafosResponseData in
+            if let parrafosResponseData = parrafosResponseData{
+                self.parrafosResponseData = parrafosResponseData.Data.map(ParagraphResponseViewModel.init)
+            }
+        }
+    }
+    
 }
 
 

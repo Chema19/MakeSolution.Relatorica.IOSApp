@@ -12,6 +12,7 @@ class ApiNetworking {
     
     public lazy var buyUrlPost: String = { return "\(baseUrl)/purchasesapi/purchases"}()
     public lazy var fatherUrlPost: String = { return "\(baseUrl)/loginapi/fathers"}()
+    public lazy var childUrlPost:String={return "\(baseUrl)/childapi/childs"}()
 
     func urlFatherProfile(padreId: Int?) -> String{
         return "\(baseUrl)/fatherapi/fathers/\(String(padreId!))"
@@ -23,6 +24,64 @@ class ApiNetworking {
 
     func urlSonidoById(sonidoId: Int?) -> String{
         return "$\(baseUrl)/soundsapi/sounds/\(String(sonidoId!))"
+    }
+    
+    func urlChildsByFather(fatherId:Int?)->String{
+        return "\(baseUrl)/childapi/fathers/\(String(fatherId!))/childs"
+    }
+    
+    func getChildByFather(fatherId:Int?,token: String?,  completion: @escaping(ChildsResponse?)->()){
+        let direccion = urlChildsByFather(fatherId: fatherId)
+        let url = URL(string: direccion)!
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue(token!, forHTTPHeaderField: "Authorization")
+        URLSession.shared.dataTask(with: request){data, response, error in
+            guard let json = data, error == nil else{
+                DispatchQueue.main.sync {
+                    completion(nil)
+                }
+                return
+            }
+            do {
+                let childsResponse = try JSONDecoder().decode(ChildsResponse.self, from: json)
+                DispatchQueue.main.async{
+                    completion(childsResponse)
+                }
+            } catch {
+                print("JSON error: \(error.localizedDescription)")
+            }
+        }.resume()
+    }
+    func postChild(child:ChildModel?,token:String?, completion: @escaping(AddChildResponse?)->()){
+        let direccion = self.childUrlPost
+        let url = URL(string: direccion)!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        let json: [String: Any] = ["HijoId": child!.HijoId, "NombreCompleto":  child!.NombreCompleto,
+                                   "Estado": child!.Estado,"FechaRegistro":child!.FechaRegistro,
+                                   "FechaNacimiento":child!.FechaNacimiento,"PadreId":child!.PadreId]
+        print(json)
+        request.httpBody = json.percentEscaped().data(using: .utf8)
+        request.addValue(token!, forHTTPHeaderField: "Authorization")
+        URLSession.shared.dataTask(with: request){data, response, error in
+            guard let json = data, error == nil else{
+                DispatchQueue.main.sync {
+                    completion(nil)
+                }
+                return
+            }
+            do {
+                let childsResponse = try JSONDecoder().decode(AddChildResponse.self, from: json)
+                DispatchQueue.main.async{
+                    completion(childsResponse)
+                }
+            } catch {
+                print("JSON error: \(error.localizedDescription)")
+            }
+        }.resume()
     }
 }
 
