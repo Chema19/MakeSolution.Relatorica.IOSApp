@@ -10,18 +10,9 @@ import Foundation
 import SwiftUI
 import Combine
 
-class ParagraphListViewModel: Identifiable{
+class ParagraphListViewModel: ObservableObject, Identifiable{
     @Published var parrafosResponseData = [ParagraphResponseViewModel]()
     init(token: String?,historyId: Int){
-        ParagraphApiNetworking().getParagraphByHistory(token: token, historyId: historyId) {
-            parrafosResponseData in
-            if let parrafosResponseData = parrafosResponseData{
-                self.parrafosResponseData = parrafosResponseData.Data.map(ParagraphResponseViewModel.init)
-            }
-        }
-    }
-    
-    func getListParagraph(token: String?,historyId: Int){
         ParagraphApiNetworking().getParagraphByHistory(token: token, historyId: historyId) {
             parrafosResponseData in
             if let parrafosResponseData = parrafosResponseData{
