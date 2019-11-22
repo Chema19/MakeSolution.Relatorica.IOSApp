@@ -16,30 +16,25 @@ struct ChildsView: View {
     @State var padreId: Int? = UserDefaults.standard.object(forKey:"PADREID") as? Int
     @State var token: String? = UserDefaults.standard.object(forKey:"TOKEN") as? String
     @ObservedObject private var childList = ChildListViewModel(fatherId: UserDefaults.standard.object(forKey:"PADREID") as? Int, token: UserDefaults.standard.object(forKey:"TOKEN") as? String)
+    var CapsuleButton = TokenButton(capsuleText: "Capsule")
+    let image = ["hero1", "hero2", "hero3","hero4", "hero5", "hero6","hero7", "hero8", "hero9","hero10", "hero11", "hero12"]
+    
     var body: some View {
         NavigationView{
-        VStack {
-        List(self.childList.childsResponseData, id:\.hijoId)
-        { hijo in
-                HStack{
-                   //Image("algo")
-                    VStack{
-                        Text(hijo.nombreCompleto).font(.headline)
-                        Text(hijo.fechaNacimiento).font(.subheadline)
-                    }.padding(.leading,8)
-                }.padding(.init(top:12,leading:0,bottom:8,trailing:0))
-                
+            VStack{
+                NavigationLink(destination: AddChildView()){
+                    Text("Add Child")
+                }.padding(.top,10).buttonStyle(self.CapsuleButton.buttonStyle)
+                List(self.childList.childsResponseData, id:\.hijoId){ hijo in
+                    CardViewChild(image: self.image.randomElement()!, name: hijo.nombreCompleto, fechaNacimiento: hijo.fechaNacimiento)
+                }
             }.navigationBarTitle(Text("Hijos"))
-            NavigationLink(destination: AddChildView()){
-                Text("Agregar Hijo")
-            }
-        }
-        }
-}
+        }//.edgesIgnoringSafeArea([.all])
+    }
 }
 
-struct ChildsView_Previews: PreviewProvider {
+/*struct ChildsView_Previews: PreviewProvider {
     static var previews: some View {
         ChildsView()
     }
-}
+}*/

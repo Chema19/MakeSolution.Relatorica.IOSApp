@@ -20,7 +20,6 @@ class PurchaseListViewModel:ObservableObject {
 
 struct PurchaseResponseViewModel{
 
-    
     var historyModel: HistoryModel
     
     init(historyModel:HistoryModel){

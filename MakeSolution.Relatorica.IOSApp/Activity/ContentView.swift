@@ -18,15 +18,15 @@ struct ContentView: View {
                 }.tag(0)
             StoreView()
                 .tabItem {
-                    Image("store")
+                    Image(systemName: "cart.fill")
                     Text("Store")
-                }.tag(1)
+            }.tag(1)
             ChildsView()
-            .tabItem {
-                Image("childs")
-                Text("Childs")
+                .tabItem {
+                    Image(systemName: "person.3.fill")
+                    Text("Childs")
             }.tag(2)
-        }.navigationBarHidden(true)
+        }
     }
 }
 

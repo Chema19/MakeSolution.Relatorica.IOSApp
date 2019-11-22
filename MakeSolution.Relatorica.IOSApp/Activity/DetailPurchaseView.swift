@@ -1,42 +1,82 @@
 import SwiftUI
+import Combine
 
 struct DetailPurchaseView: View {
     
-    var purchaseResponseVM: PurchaseResponseViewModel 
-    //@State var paragraphListTest = ParagraphListViewModel(token: UserDefaults.standard.object(forKey:"TOKEN") as? String, historyId: purchaseResponseVM.historiaId)
-    var paragraphList: ParagraphListViewModel! = nil
-    
-    
+    var purchaseResponseVM: PurchaseResponseViewModel
+    @ObservedObject var paragraphListVM: ParagraphListViewModel
+    @ObservedObject var imageLoader = ImageLoader()
+    @ObservedObject var sonido = SoundViewModel()
+    var CapsuleButton = TokenButton(capsuleText: "Capsule")
     
     var body: some View {
-        VStack {
-            NavigationView{
-                URLImage(url: purchaseResponseVM.imagen).frame(height: 280, alignment: .center).edgesIgnoringSafeArea(.top)
-                VStack(alignment: .leading){
-                    Text(purchaseResponseVM.nombre).font(Font.title.weight(.bold)).multilineTextAlignment(.leading).padding(.horizontal,10).offset(y: -200).padding(.bottom,-130).foregroundColor(.white)
-                }
-                VStack(alignment: .leading) {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            ForEach(self.paragraphList.parrafosResponseData){ parrafo in
-                                VStack(alignment: .leading) {
-                                    Text(parrafo.texto)
-                                        .foregroundColor(.primary)
-                                        .multilineTextAlignment(.leading).padding(.horizontal,10)
-                                }.frame(width:380, height: 200).clipped()
-                            }
+        NavigationView {
+        ScrollView{
+            Group {
+                    ZStack {
+                        if (imageLoader.image != nil) {
+                                Image(uiImage: self.imageLoader.image!)
+                                    .resizable().frame(height: 280)
+                        }
+                    }.onAppear {
+                        if let url = URL(string: self.purchaseResponseVM.imagen) {
+                            self.imageLoader.downloadImage(url: url)
                         }
                     }
-                }
+                    Section {
+                        Text(purchaseResponseVM.nombre)
+                            .font(.title)
+                            .multilineTextAlignment(.leading).padding(.horizontal,10)
+                        VStack {
+                            NavigationLink(destination: AddFatherView()) {
+                                Text("Dinamicas")
+                            }.padding(.top,10).buttonStyle(self.CapsuleButton.buttonStyle)
+                        }
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
+                                ForEach(paragraphListVM.parrafosResponseData, id: \.ParrafoId){ parrafo in
+                                    VStack(alignment: .leading) {
+                                        ScrollView{
+                                            Text(parrafo.Texto)
+                                                .foregroundColor(.primary)
+                                                .multilineTextAlignment(.leading).padding(.horizontal,10)
+                                            
+                                            Button(action: {
+                                                //SoundViewModel().getSoundData(token: //(UserDefaults.standard.object(forKey:"TOKEN") as? String)!, soundId: //parrafo.SonidoId){ resultado in
+                                                self.sonido.playSound()
+                                                //}
+                                            }) {
+                                                Text("Emitir Sonido")
+                                            }.padding(.top,20)
+                                        }
+                                    }.frame(width:380, height: 300).clipped()
+                                }
+                            
+                            }
+                        }
+                        
+                    }
+                
             }
+        }.edgesIgnoringSafeArea([.top])
         }
     }
 }
 
-//struct DetailPurchaseView_Previews: PreviewProvider {
-    //static var previews: some View {
-        //DetailPurchaseView()
-    //}
-//}
-
-
+struct PosterView: View {
+    
+    var image: UIImage?
+    var body: some View {
+        ZStack {
+            Rectangle()
+                .foregroundColor(.gray)
+                .aspectRatio(500/750, contentMode: .fit)
+            
+            if (image != nil) {
+                Image(uiImage: self.image!)
+                    .resizable()
+                    .aspectRatio(500/750, contentMode: .fit).frame(height: 280, alignment: .center)
+            }
+        }
+    }
+}

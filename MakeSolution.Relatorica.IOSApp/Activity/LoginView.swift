@@ -17,63 +17,62 @@ struct LoginView: View {
   
     
     var body: some View {
-        VStack {
-            NavigationView {
+        VStack{
                 if showLoginView {
-                    ContentView().animation(.spring())
-                    .transition(.slide)
+                    ContentView().animation(.spring()).transition(.slide)
                 } else {
-                   VStack {
-                        Text("Relatorica").padding(.top,40).font(Font.title.weight(.bold))
-                        Image("login").clipShape(Rectangle()) .overlay(Rectangle().stroke(Color.white, lineWidth: 4)).shadow(radius: 10).padding(.top,30)
+                   NavigationView {
+                        VStack{
+                            Text("Relatorica").padding(.top,40).font(Font.title.weight(.bold))
+                            Image("login").clipShape(Rectangle()) .overlay(Rectangle().stroke(Color.white, lineWidth: 4)).shadow(radius: 10).padding(.top,30)
                     
-                        HStack {
-                            Image("user").foregroundColor(.red).shadow(radius: 10).frame(width: 32.0, height: 32.0)
-                            TextField("Enter username", text:$username).padding(.all).background(lightGreyColor).cornerRadius(5.0)
-                        }.padding(.horizontal,28).padding(.top,30)
+                            HStack {
+                                Image(systemName: "person.fill").foregroundColor(.red).shadow(radius: 10).frame(width: 32.0, height: 32.0)
+                                TextField("Enter username", text:$username).padding(.all).background(lightGreyColor).cornerRadius(5.0) .foregroundColor(.black)
+                            }.padding(.horizontal,28).padding(.top,30)
                     
-                        HStack {
-                            Image("key").foregroundColor(.red).shadow(radius: 10).frame(width: 32.0, height: 32.0)
-                            TextField("Enter passsword", text:$password).padding(.all).background(lightGreyColor).cornerRadius(5.0)
-                        }.padding(.horizontal,28)
+                            HStack {
+                                Image(systemName: "lock.open.fill").foregroundColor(.red).shadow(radius: 10).frame(width: 32.0, height: 32.0)
+                                SecureField("Enter passsword", text:$password).padding(.all).background(lightGreyColor).cornerRadius(5.0) .foregroundColor(.black)
+                            }.padding(.horizontal,28)
                     
-                        Button(action: {
-                            if self.username != "" && self.password != "" {
-                                LoginViewModel().postLogin(username: self.username, password: self.password){
-                                    resulto in
-                                        if resulto!.loginResponse.Error == false {
-                                            let preferences = UserDefaults.standard
-                                            preferences.set(resulto!.loginResponse.Data.PersonId, forKey: "PADREID")
-                                            preferences.set("Bearer " + resulto!.loginResponse.Data.Token, forKey: "TOKEN")
-                                            self.showLoginView = true
-                                        }else{
-                                            self.activeAlert = .second
-                                            self.showingAlert = true
+                            Button(action: {
+                                if self.username != "" && self.password != "" {
+                                    LoginViewModel().postLogin(username: self.username, password: self.password){
+                                        resulto in
+                                            if resulto!.loginResponse.Error == false {
+                                                let preferences = UserDefaults.standard
+                                                preferences.set(resulto!.loginResponse.Data.PersonId, forKey: "PADREID")
+                                                preferences.set("Bearer " + resulto!.loginResponse.Data.Token, forKey: "TOKEN")
+                                                self.showLoginView = true
+                                            }else{
+                                                self.activeAlert = .second
+                                                self.showingAlert = true
+                                            }
                                         }
+                                    }else{
+                                        self.activeAlert = .first
+                                        self.showingAlert = true
                                     }
-                                }else{
-                                    self.activeAlert = .first
-                                    self.showingAlert = true
+                                }) {
+                                   Text("Enter")
+                            }.padding(.top,20).buttonStyle(self.CapsuleButton.buttonStyle).alert(isPresented: $showingAlert){
+                                switch activeAlert {
+                                    case .first:
+                                        return Alert(title: Text("Error"), message: Text("username or password empty, Add credentials"), dismissButton: .default(Text("Got it!")))
+                                    case .second:
+                                        return Alert(title: Text("Error"), message: Text("Incorrect Account"), dismissButton: .default(Text("Got it!")))
+                                    }
                                 }
-                            }) {
-                                Text("Enter")
-                        }.padding(.top,20).buttonStyle(self.CapsuleButton.buttonStyle).alert(isPresented: $showingAlert){
-                            switch activeAlert {
-                                case .first:
-                                    return Alert(title: Text("Error"), message: Text("username or password empty, Add credentials"), dismissButton: .default(Text("Got it!")))
-                                case .second:
-                                    return Alert(title: Text("Error"), message: Text("Incorrect Account"), dismissButton: .default(Text("Got it!")))
-                                }
-                            }
                             VStack {
                                 NavigationLink(destination: AddFatherView()) {
-                                    Text("Register user")
-                                }
+                                 Text("Register user")
+                                }.padding(.top,20)
                             }
-                        }
+                        }.edgesIgnoringSafeArea([.top])
                     }
-                }.edgesIgnoringSafeArea(.top)
-        }.edgesIgnoringSafeArea(.top)
+            }
+        }
     }
 }
 

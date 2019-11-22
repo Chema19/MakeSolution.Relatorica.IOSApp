@@ -32,7 +32,7 @@ struct AddFatherView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text("Add User").padding(.top,40).font(Font.title.weight(.bold))
+                Text("Add User").padding(.top,75).font(Font.title.weight(.bold))
                 VStack {
                     Text("Name")
                     TextField("Enter name", text:$nombres).padding(.all).background(lightGreyColor).cornerRadius(5.0)
@@ -85,7 +85,7 @@ struct AddFatherView: View {
                     }
                 }
             }
-        }
+        }.edgesIgnoringSafeArea([.top])
     }
 }
 

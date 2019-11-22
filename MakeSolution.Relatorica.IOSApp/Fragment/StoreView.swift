@@ -18,16 +18,15 @@ struct StoreView: View {
     
     var body: some View {
         NavigationView{
-        List(self.historiesList.historiesResponseData, id:\.historiaId)
-         { histories in
-            NavigationLink(destination: DetailStoreView(historiesResponseVM: histories)){
-                VStack(alignment: .center, spacing: 1){
-                    CardViewStore(image: histories.imagen, nombre: histories.nombre, precio: "Precio: S/. " + String(histories.precio) , autor: histories.editorial)
+            List(self.historiesList.historiesResponseData, id:\.historiaId){ histories in
+                NavigationLink(destination: DetailStoreView(historiesResponseVM: histories)){
+                    VStack(alignment: .center, spacing: 1){
+                        CardViewStore(image: histories.imagen, nombre: histories.nombre, precio: "Precio: S/. " + String(describing:  histories.precio) , autor: histories.editorial)
+                    }
                 }
             }
-         }
             .navigationBarTitle(Text("Store stories"))
-        }
+        }//.edgesIgnoringSafeArea([.all])
     }
 }
 

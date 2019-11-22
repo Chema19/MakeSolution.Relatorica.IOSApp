@@ -13,6 +13,7 @@ struct CardViewStore: View {
     var nombre: String
         var precio: String
     var autor: String
+    var CapsuleButton = TokenButton(capsuleText: "Capsule")
         
         var body: some View {
             VStack{
@@ -22,27 +23,30 @@ struct CardViewStore: View {
                        Text(nombre)
                            .font(.headline)
                            .foregroundColor(.primary)
-                        Button(action: { }) {
-                            Text("HOLA")
-                        }
+                        
                         Text(precio)
                            .font(.title)
                            .fontWeight(.black)
                            .foregroundColor(.primary)
-                           .lineLimit(3)
+                           .lineLimit(2)
                        Text(autor.uppercased())
                            .font(.caption)
                            .foregroundColor(.secondary)
+                        VStack(alignment: .center) {
+                            Button(action: { }) {
+                                Text("GET")
+                            }.padding(.top,10)
+                        }
                    }
                    .layoutPriority(140)
-            
+                    
                    Spacer()
                 }.padding()
             }
             .cornerRadius(10)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.black, lineWidth: 4)).padding([.top, .horizontal])
+                    .stroke(Color.black, lineWidth: 2)).padding([.top, .horizontal])
         }
     }
 

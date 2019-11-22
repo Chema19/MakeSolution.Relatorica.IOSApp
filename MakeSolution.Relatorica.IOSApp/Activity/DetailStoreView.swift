@@ -3,7 +3,10 @@ import SwiftUI
 struct DetailStoreView: View {
     var CapsuleButton = TokenButton(capsuleText: "Capsule")
     var historiesResponseVM: HistoriesResponseViewModel
+    @State private var showingAlert: Bool = false
+    
     var body: some View {
+         ScrollView{
         VStack(alignment: .leading){
             
             VStack(alignment: .center){
@@ -14,10 +17,27 @@ struct DetailStoreView: View {
             }
             Text(historiesResponseVM.argumento).multilineTextAlignment(.center).padding(.horizontal,40)
             
-            Button(action: { }) {
+            Button(action: {
+                AddPurchaseViewModel().postAddPurchase(padreId: UserDefaults.standard.object(forKey:"PADREID") as? Int, historiaId: self.historiesResponseVM.historiaId, costo: self.historiesResponseVM.precio, token: UserDefaults.standard.object(forKey:"TOKEN") as? String){
+                    resulto in
+                    if resulto!.addPurchaseResponse.Error == false {
+                        self.showingAlert = true
+                    }
+                }
+                
+            }) {
                 Text("Get by S/." + String(historiesResponseVM.precio))
-            }.padding(.top,20).buttonStyle(self.CapsuleButton.buttonStyle)
-        }
+            }.padding(.top,20).buttonStyle(self.CapsuleButton.buttonStyle).alert(isPresented: $showingAlert){
+                  
+                    switch showingAlert {
+                        case true:
+                            return Alert(title: Text("Success"), message: Text("purchase added"), dismissButton: .default(Text("OK!")))
+                        case false:
+                            return Alert(title: Text("Error"), message: Text("purchase fail"), dismissButton: .default(Text("OK!")))
+                        }
+                    }
+            }
+        }.padding(.top,20).edgesIgnoringSafeArea([.top])
     }
 }
 

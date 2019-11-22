@@ -17,11 +17,13 @@ struct AddChildView: View {
     @State var birthDate="2017-11-12"
     @State var registerDate=DateFormatter().string(from: Date())
     @State var state=""
+    var lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
+    
     var body: some View {
         NavigationView{
             VStack{
-                TextField("Child Name",text:$childName)
-                //extField("Birth Date",text:$birthDate)
+                TextField("Child Name", text:$childName).padding(.all).background(lightGreyColor).cornerRadius(5.0)
+            
                 Button(action: {
                     let child:ChildModel = .init(nombreCompleto: self.childName, fechaNacimiento: self.birthDate, fechaRegistro: self.registerDate, estado: self.state, padreId: self.padreId)
                     AddChildViewModel().postChild(child: child, token: self.token!) { resulto in
@@ -34,10 +36,11 @@ struct AddChildView: View {
                 }) {
                     Text("Add")
                 }
+                }.padding(.horizontal,28).padding(.top,15).edgesIgnoringSafeArea([.top])
             }
         }
     }
-}
+
 
 struct AddChildView_Previews: PreviewProvider {
     static var previews: some View {

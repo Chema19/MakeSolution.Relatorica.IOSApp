@@ -56,6 +56,16 @@
 		935A1EEE235C23D000C3E041 /* ColorPalette.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935A1EED235C23D000C3E041 /* ColorPalette.xcassets */; };
 		935A1EF0235C288000C3E041 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EEF235C288000C3E041 /* ColorPalette.swift */; };
 		935A1EF2235C2A0700C3E041 /* Tipography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A1EF1235C2A0700C3E041 /* Tipography.swift */; };
+		93AA3C672385B85500324044 /* StoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C662385B85500324044 /* StoryRowView.swift */; };
+		93AA3C692385B97200324044 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C682385B97200324044 /* ImageLoader.swift */; };
+		93AA3C6C2385CDA000324044 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C6B2385CDA000324044 /* LoadingView.swift */; };
+		93AA3C6E2386356400324044 /* SoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C6D2386356400324044 /* SoundViewModel.swift */; };
+		93AA3C702386386000324044 /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C6F2386386000324044 /* SoundModel.swift */; };
+		93AA3C7223863AAA00324044 /* SoundApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C7123863AAA00324044 /* SoundApiNetworking.swift */; };
+		93AA3C7423863E3400324044 /* SoundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C7323863E3400324044 /* SoundResponse.swift */; };
+		93AA3C762387FAFA00324044 /* CardViewChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C752387FAFA00324044 /* CardViewChild.swift */; };
+		93AA3C782388128800324044 /* AddPurchaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C772388128800324044 /* AddPurchaseResponse.swift */; };
+		93AA3C7A238812C500324044 /* AddPurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C79238812C500324044 /* AddPurchaseViewModel.swift */; };
 		93AE95B4235D914D0071C625 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE95B3235D914D0071C625 /* ViewRouter.swift */; };
 		93AE95B6235D96B40071C625 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE95B5235D96B40071C625 /* StartView.swift */; };
 		93CFC1912360E39800308CA2 /* PurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFC1902360E39800308CA2 /* PurchaseModel.swift */; };
@@ -119,6 +129,16 @@
 		935A1EED235C23D000C3E041 /* ColorPalette.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorPalette.xcassets; sourceTree = "<group>"; };
 		935A1EEF235C288000C3E041 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		935A1EF1235C2A0700C3E041 /* Tipography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipography.swift; sourceTree = "<group>"; };
+		93AA3C662385B85500324044 /* StoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryRowView.swift; sourceTree = "<group>"; };
+		93AA3C682385B97200324044 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		93AA3C6B2385CDA000324044 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		93AA3C6D2386356400324044 /* SoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewModel.swift; sourceTree = "<group>"; };
+		93AA3C6F2386386000324044 /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
+		93AA3C7123863AAA00324044 /* SoundApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundApiNetworking.swift; sourceTree = "<group>"; };
+		93AA3C7323863E3400324044 /* SoundResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundResponse.swift; sourceTree = "<group>"; };
+		93AA3C752387FAFA00324044 /* CardViewChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewChild.swift; sourceTree = "<group>"; };
+		93AA3C772388128800324044 /* AddPurchaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPurchaseResponse.swift; sourceTree = "<group>"; };
+		93AA3C79238812C500324044 /* AddPurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPurchaseViewModel.swift; sourceTree = "<group>"; };
 		93AE95B3235D914D0071C625 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		93AE95B5235D96B40071C625 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		93CFC1902360E39800308CA2 /* PurchaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseModel.swift; sourceTree = "<group>"; };
@@ -160,6 +180,7 @@
 		8B5EA200235A460900EDB686 /* MakeSolution.Relatorica.IOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				93AA3C6A2385CD8900324044 /* UIKitViews */,
 				933B302C237D8DB2005D6252 /* ResponseViewModel */,
 				93CFC19823615B8100308CA2 /* ViewModel */,
 				93CFC18F23609C6700308CA2 /* Model */,
@@ -172,7 +193,6 @@
 				8B5EA215235A46F000EDB686 /* Network */,
 				8B5EA201235A460900EDB686 /* AppDelegate.swift */,
 				8B5EA203235A460900EDB686 /* SceneDelegate.swift */,
-				8B5EA205235A460900EDB686 /* ContentView.swift */,
 				8B5EA207235A460B00EDB686 /* Assets.xcassets */,
 				8B5EA20C235A460B00EDB686 /* LaunchScreen.storyboard */,
 				8B5EA20F235A460B00EDB686 /* Info.plist */,
@@ -198,6 +218,7 @@
 				933B301623792D06005D6252 /* PurchaseApiNetworking.swift */,
 				933B301A23792ED8005D6252 /* StoreApiNetworking.swift */,
 				933B3028237D2164005D6252 /* ParagraphApiNetworking.swift */,
+				93AA3C7123863AAA00324044 /* SoundApiNetworking.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -230,6 +251,9 @@
 				933B30102375A23A005D6252 /* Constants.swift */,
 				933B3020237AD690005D6252 /* CardViewHome.swift */,
 				933B3022237BB51B005D6252 /* CardViewStore.swift */,
+				93AA3C662385B85500324044 /* StoryRowView.swift */,
+				93AA3C682385B97200324044 /* ImageLoader.swift */,
+				93AA3C752387FAFA00324044 /* CardViewChild.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -252,6 +276,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		93AA3C6A2385CD8900324044 /* UIKitViews */ = {
+			isa = PBXGroup;
+			children = (
+				93AA3C6B2385CDA000324044 /* LoadingView.swift */,
+			);
+			path = UIKitViews;
+			sourceTree = "<group>";
+		};
 		93CFC18E23609C5F00308CA2 /* Response */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +295,8 @@
 				933B3024237D20FA005D6252 /* ParagraphResponse.swift */,
 				933B3033237EC4B0005D6252 /* AddChildResponse.swift */,
 				933B3039237EE921005D6252 /* AddFatherResponse.swift */,
+				93AA3C7323863E3400324044 /* SoundResponse.swift */,
+				93AA3C772388128800324044 /* AddPurchaseResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -278,6 +312,7 @@
 				933B3026237D2140005D6252 /* ParagraphModel.swift */,
 				933B302F237EC37F005D6252 /* AddChildModel.swift */,
 				933B3037237EE4BF005D6252 /* AddFatherModel.swift */,
+				93AA3C6F2386386000324044 /* SoundModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +320,7 @@
 		93CFC19823615B8100308CA2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				93AA3C6D2386356400324044 /* SoundViewModel.swift */,
 				93CFC19F2361684C00308CA2 /* PurchaseListViewModel.swift */,
 				93295B27236E172300332D4C /* LoginViewModel.swift */,
 				93295B29236E508700332D4C /* HistoryListViewModel.swift */,
@@ -294,6 +330,7 @@
 				933B302A237D252D005D6252 /* ParagraphListViewModel.swift */,
 				933B3035237EC513005D6252 /* AddChildViewModel.swift */,
 				933B303F237EEB61005D6252 /* AddFatherViewModel.swift */,
+				93AA3C79238812C500324044 /* AddPurchaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -301,6 +338,7 @@
 		93D506F9235BB92600EAAC60 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				8B5EA205235A460900EDB686 /* ContentView.swift */,
 				933B303B237EE9AA005D6252 /* AddFatherView.swift */,
 				935A1EE4235BBA6A00C3E041 /* LoginView.swift */,
 				93AE95B5235D96B40071C625 /* StartView.swift */,
@@ -393,6 +431,7 @@
 				93CFC197236155BA00308CA2 /* ApiNetworking.swift in Sources */,
 				93295B22236E13F000332D4C /* LoginModel.swift in Sources */,
 				93295B12236AAE8000332D4C /* NetworkingSwiftUI.xcdatamodeld in Sources */,
+				93AA3C7A238812C500324044 /* AddPurchaseViewModel.swift in Sources */,
 				8B5EA202235A460900EDB686 /* AppDelegate.swift in Sources */,
 				933B301723792D06005D6252 /* PurchaseApiNetworking.swift in Sources */,
 				935A1EE5235BBA6A00C3E041 /* LoginView.swift in Sources */,
@@ -402,27 +441,35 @@
 				93AE95B4235D914D0071C625 /* ViewRouter.swift in Sources */,
 				933B30132375AEF8005D6252 /* DetailPurchaseView.swift in Sources */,
 				93D506F4235BB00100EAAC60 /* HomeView.swift in Sources */,
+				93AA3C692385B97200324044 /* ImageLoader.swift in Sources */,
 				933B301923792E5B005D6252 /* LoginApiNetworking.swift in Sources */,
 				935A1EF2235C2A0700C3E041 /* Tipography.swift in Sources */,
+				93AA3C6C2385CDA000324044 /* LoadingView.swift in Sources */,
+				93AA3C782388128800324044 /* AddPurchaseResponse.swift in Sources */,
 				933B3040237EEB61005D6252 /* AddFatherViewModel.swift in Sources */,
 				8B5EA204235A460900EDB686 /* SceneDelegate.swift in Sources */,
 				933B3021237AD691005D6252 /* CardViewHome.swift in Sources */,
 				933B3025237D20FD005D6252 /* ParagraphResponse.swift in Sources */,
+				93AA3C7223863AAA00324044 /* SoundApiNetworking.swift in Sources */,
 				933B301D237931D4005D6252 /* HistoryViewModel.swift in Sources */,
+				93AA3C6E2386356400324044 /* SoundViewModel.swift in Sources */,
 				933B3034237EC4B0005D6252 /* AddChildResponse.swift in Sources */,
 				93CFC195236106A300308CA2 /* PurchaseResponse.swift in Sources */,
 				93CFC1912360E39800308CA2 /* PurchaseModel.swift in Sources */,
 				93D506F6235BB12900EAAC60 /* StoreView.swift in Sources */,
 				933B3038237EE4C2005D6252 /* AddFatherModel.swift in Sources */,
 				93CFC1A02361684C00308CA2 /* PurchaseListViewModel.swift in Sources */,
+				93AA3C672385B85500324044 /* StoryRowView.swift in Sources */,
 				93295B2E236E575500332D4C /* ChildListViewModel.swift in Sources */,
 				93295B14236D051300332D4C /* HistoryModel.swift in Sources */,
 				933B301B23792ED8005D6252 /* StoreApiNetworking.swift in Sources */,
 				93295B16236D080900332D4C /* HistoryResponse.swift in Sources */,
 				93295B32236E589600332D4C /* ChildsResponse.swift in Sources */,
+				93AA3C762387FAFA00324044 /* CardViewChild.swift in Sources */,
 				935A1EF0235C288000C3E041 /* ColorPalette.swift in Sources */,
 				933B303C237EE9AA005D6252 /* AddFatherView.swift in Sources */,
 				8B5EA206235A460900EDB686 /* ContentView.swift in Sources */,
+				93AA3C702386386000324044 /* SoundModel.swift in Sources */,
 				935A1EE9235C209700C3E041 /* AliasHelper.swift in Sources */,
 				93295B2A236E508700332D4C /* HistoryListViewModel.swift in Sources */,
 				933B301523792C6A005D6252 /* DetailStoreView.swift in Sources */,
@@ -437,6 +484,7 @@
 				93295B26236E166900332D4C /* LoginFatherModel.swift in Sources */,
 				93295B28236E172300332D4C /* LoginViewModel.swift in Sources */,
 				93D506F8235BB22800EAAC60 /* ChildsView.swift in Sources */,
+				93AA3C7423863E3400324044 /* SoundResponse.swift in Sources */,
 				933B3027237D2140005D6252 /* ParagraphModel.swift in Sources */,
 				93295B2C236E510A00332D4C /* HistoriesResponse.swift in Sources */,
 				93295B24236E146500332D4C /* LoginResponse.swift in Sources */,

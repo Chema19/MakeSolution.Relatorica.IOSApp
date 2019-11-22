@@ -60,7 +60,7 @@ class ApiNetworking {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        let json: [String: Any] = ["HijoId": child!.HijoId, "NombreCompleto":  child!.NombreCompleto,
+        let json: [String: Any] = ["HijoId": child!.HijoId as Any, "NombreCompleto":  child!.NombreCompleto,
                                    "Estado": child!.Estado,"FechaRegistro":child!.FechaRegistro,
                                    "FechaNacimiento":child!.FechaNacimiento,"PadreId":child!.PadreId]
         print(json)

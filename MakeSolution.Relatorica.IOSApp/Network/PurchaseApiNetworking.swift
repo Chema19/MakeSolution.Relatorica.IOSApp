@@ -17,9 +17,13 @@ class PurchaseApiNetworking{
            return "\(historiaUrlGet)/\(String(historyId!))"
        }
     
-    func urlPurchasesByFather(padreId: Int?) -> String {
-        return "\(ApiNetworking().baseUrl)/purchasesapi/fathers/\(String(padreId!))/purchases"
+    func urlPurchasesPost() -> String {
+        return "\(ApiNetworking().baseUrl)/purchasesapi/purchases"
     }
+    
+    func urlPurchasesByFather(padreId: Int?) -> String {
+           return "\(ApiNetworking().baseUrl)/purchasesapi/fathers/\(String(padreId!))/purchases"
+       }
     
     func getPurchasesByFather(idPadre: Int?, token: String?, completion: @escaping(PurchaseResponse?)->()){
         let direccion = urlPurchasesByFather(padreId: idPadre)
@@ -72,4 +76,36 @@ class PurchaseApiNetworking{
            }
        }.resume()
    }
+    
+    func postPurchase(padreId: Int?,historiaId: Int?, costo: Double?, token: String?, completion: @escaping(AddPurchaseResponse?)->()){
+        let direccion = urlPurchasesPost()
+        let url = URL(string: direccion)!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.addValue(token!, forHTTPHeaderField: "Authorization")
+        let compraId: Int? = nil
+        
+        let jsonResult: [String: Any] = ["CompraId": compraId as Any, "PadreId":  padreId!,"HistoriaId": historiaId!, "FechaCompra":  "09/18/2019", "Costo":  costo!,"Estado": "ACT", ]
+        
+        request.httpBody = jsonResult.percentEscaped().data(using: .utf8)
+        
+        URLSession.shared.dataTask(with: request){data, response, error in
+            guard let json = data, error == nil else{
+                DispatchQueue.main.sync {
+                    completion(nil)
+                }
+                return
+            }
+            do {
+                let purchaseResponse = try JSONDecoder().decode(AddPurchaseResponse.self, from: json)
+                //let posts = try JSONDecoder().decode(PurchaseResponse.self,from:json)
+                DispatchQueue.main.async{
+                    completion(purchaseResponse)
+                }
+            } catch {
+                print("JSON error: \(error.localizedDescription)")
+            }
+        }.resume()
+    }
 }

@@ -7,21 +7,14 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView{
-            List(self.purchaseList.purchasesResponseData, id: \.historiaId)
-            { purchases in
-                NavigationLink(destination: DetailPurchaseView(purchaseResponseVM: purchases)) {
-                    VStack (alignment: .center, spacing: 1){
-                        CardViewHome(image: purchases.imagen, heading: purchases.nombre, author: purchases.editorial)
-                    }
+            List(self.purchaseList.purchasesResponseData, id: \.historiaId){ purchases in
+                NavigationLink(destination: DetailPurchaseView(purchaseResponseVM: purchases,paragraphListVM: ParagraphListViewModel(token: self.preference.object(forKey: "TOKEN") as? String, historyId: purchases.historiaId) )) {
+                    StoryRowView(image: purchases.imagen, heading: purchases.nombre, author: purchases.editorial)
                 }
-            }
-             .navigationBarTitle(Text("Purchased stories"))
-        }
+            }.navigationBarTitle(Text("Purchased stories"))
+            /*NavigationButton(destination: Text("detail 2")) {
+                               Text("row 2")
+                           }*/
+        }//.edgesIgnoringSafeArea([.all])
     }
 }
-
-//struct HomeView_Previews: PreviewProvider {
-    //static var previews: some View {
-       // HomeView()
-    //}
-//}

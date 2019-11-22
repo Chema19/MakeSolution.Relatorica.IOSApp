@@ -25,7 +25,7 @@ class ParagraphApiNetworking{
               request.addValue(token!, forHTTPHeaderField: "Authorization")
               URLSession.shared.dataTask(with: request){data, response, error in
                   guard let json = data, error == nil else{
-                      DispatchQueue.main.sync {
+                      DispatchQueue.main.async {
                           completion(nil)
                       }
                       return
@@ -36,7 +36,7 @@ class ParagraphApiNetworking{
                           completion(paragraphsResponse)
                       }
                   } catch {
-                      print("JSON error: \(error.localizedDescription)")
+                      print("JSON error PTM: \(error.localizedDescription)")
                   }
               }.resume()
     }
